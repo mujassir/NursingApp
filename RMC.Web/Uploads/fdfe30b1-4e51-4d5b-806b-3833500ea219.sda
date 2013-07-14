@@ -1,0 +1,22 @@
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	04	23	15	28	84	74		START	STUDY	N	0	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	05	55	35	58	72	Study Header	Study	Header	N	0	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	05	55	35	58	71	Enter Hospital Unit	Query	01	N	0	000	N	0	Locations	0	None	-1		-1		N	F	0.000	16A	0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	04	23	15	54	86	71	Enter Nurse Name	Query	02	N	0	000	N	0	Locations	0	None	-1		-1		N	F	0.000	ANN PUZIO	0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	04	23	15	36	39	71	Enter Hospital Unit	Query	01	N	0	000	N	0	Locations	0	None	-1		-1		N	F	0.000	16A	0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	00	29	16	01	61	Nurse Station	Nurse	Station	N	1	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	00	29	30	56	54	Computer Data Entry	Computer	DataEntry	N	2	000	N	1	Patient Rm, Nurse Station	3	Administrative	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	00	58	19	66	60	Patient Room	Patient	Room	N	1	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	00	58	21	66	10	Give Meds	Give	Meds	V	2	000	N	1	Patient Rm, Nurse Station	1	Direct Care	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	01	47	49	15	50	Off Unit	Off  the	Unit	N	1	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	01	47	52	73	33	InDirect Care	InDirect	Care	S	2	000	N	2	On the Unit, Off the Unit	2	In-Direct Care	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	02	26	48	40	60	Patient Room	Patient	Room	N	1	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	02	26	52	74	10	Give Meds	Give	Meds	V	2	000	N	1	Patient Rm, Nurse Station	1	Direct Care	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	03	28	50	61	61	Nurse Station	Nurse	Station	N	1	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	03	29	00	12	65	Documentation	Document	-ation	N	1	000	N	1	Patient Rm, Nurse Station	7	Documentation	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	03	44	06	48	13	Meds Paperwork	Meds	Paperwrk	N	2	000	N	0	Locations	7	Documentation	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	04	47	39	81	61	Nurse Station	Nurse	Station	N	1	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	04	47	45	53	54	Computer Data Entry	Computer	DataEntry	N	2	000	N	1	Patient Rm, Nurse Station	3	Administrative	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	05	52	38	00	60	Patient Room	Patient	Room	N	1	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	05	52	41	06	00	Assess- ment	Assess-	ment	V	2	000	N	1	Patient Rm, Nurse Station	1	Direct Care	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	06	16	48	95	61	Nurse Station	Nurse	Station	N	1	000	N	0	Locations	0	None	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1
+23993866	V14.02.01	2	IHI 22	IHI Phase II	F	P	M	S	N	N	E	O	P	P	2004	10	05	06	16	50	83	53	Report	Report		V	2	000	N	1	Patient Rm, Nurse Station	2	In-Direct Care	-1		-1		N	F	0.000		0	0	0	100.000000	0	-1	 		1

@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RMC" Class="RMCDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=74.53.37.194,1733;Initial Catalog=RMC;Persist Security Info=True;User ID=rmc" SettingsObjectName="RMC.DataService.Properties.Settings" SettingsPropertyName="RMCConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Activities" Member="Activities">
+    <Type Name="Activity">
+      <Column Name="ActivityID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Activity" Member="Activity1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ValidateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Years" Member="Years">
+    <Type Name="Year">
+      <Column Name="YearID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Year" Member="Year1" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="HospitalDemographicID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Year_Month" Member="Months" ThisKey="YearID" OtherKey="YearID" Type="Month" />
+      <Association Name="HospitalDemographicInfo_Year" Member="HospitalDemographicInfo" ThisKey="HospitalDemographicID" OtherKey="HospitalDemographicID" Type="HospitalDemographicInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BenchmarkFilter" Member="BenchmarkFilters">
+    <Type Name="BenchmarkFilter">
+      <Column Name="FilterId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BedsInUnitFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optBedsInUnitFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BedsInUnitTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optBedsInUnitTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BudgetedPatientFrom" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="optBudgetedPatientFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BudgetedPatientTo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="optBudgetedPatientTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ElectronicDocumentationFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optElectronicDocumentationFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ElectronicDocumentationTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optElectronicDocumentationTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DocByException" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UnitType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PharmacyType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HospitalType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ConfigurationName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HospitalSizeFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optHospitalSizeFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HospitalSizeTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optHospitalSizeTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataPointsFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optDataPointsFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataPointsTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optDataPointsTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CountryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StateId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilterName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Share" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HospitalUnitIds" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CategoryGroup" Member="CategoryGroups">
+    <Type Name="CategoryGroup">
+      <Column Name="CategoryGroupID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryGroup" Member="CategoryGroup1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CategoryProfile" Member="CategoryProfiles">
+    <Type Name="CategoryProfile">
+      <Column Name="CategoryProfileID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryProfileName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ProfileTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ValidationID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryAssignmentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ProfileType_CategoryProfile" Member="ProfileType" ThisKey="ProfileTypeID" OtherKey="ProfileTypeID" Type="ProfileType" IsForeignKey="true" />
+      <Association Name="Validation_CategoryProfile" Member="Validation" ThisKey="ValidationID" OtherKey="ValidationID" Type="Validation" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CognitiveCategory" Member="CognitiveCategories">
+    <Type Name="CognitiveCategory">
+      <Column Name="CognitiveCategoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CognitiveCategoryText" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ColumnNames" Member="ColumnNames">
+    <Type Name="ColumnName">
+      <Column Name="ColumnID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ColumnName" Member="ColumnName1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TableName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="ColumnName_DynamicData" Member="DynamicDatas" ThisKey="ColumnID" OtherKey="ColumnID" Type="DynamicData" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactUs" Member="ContactUs">
+    <Type Name="ContactUs">
+      <Column Name="ContactUsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SenderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Country" Member="Countries">
+    <Type Name="Country">
+      <Column Name="CountryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CountryName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CountryAbbreviation" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Country_State" Member="States" ThisKey="CountryID" OtherKey="CountryID" Type="State" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DataImportConfigLocation" Member="DataImportConfigLocations">
+    <Type Name="DataImportConfigLocation">
+      <Column Name="ConfigurationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ConfigurationName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ConfigurationNameLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="SoftwareVersionLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="PDANameLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="YearLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="MonthLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="DateLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="HourLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="MinuteLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="SecondLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="KeyDataLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="KeyDataSeqLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="InfoSequenceLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="HeaderLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="TimelessLocation" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DynamicData" Member="DynamicDatas">
+    <Type Name="DynamicData">
+      <Column Name="DynamicDataID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ColumnID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="ColumnName_DynamicData" Member="ColumnName" ThisKey="ColumnID" OtherKey="ColumnID" Type="ColumnName" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ErrorLog" Member="ErrorLogs">
+    <Type Name="ErrorLog">
+      <Column Name="ErrorLogId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ErrorMessage" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ErrorType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DatasetInfo" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HospitalDemographicInfo" Member="HospitalDemographicInfos">
+    <Type Name="HospitalDemographicInfo">
+      <Column Name="HospitalDemographicID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HospitalInfoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HospitalUnitName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TCABUnit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UnitType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BedsInUnit" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BudgetedPatientsPerNurse" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DocByException" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ElectronicDocumentation" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PharmacyType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsEndDate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EndedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EndedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDynamic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsCollapse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="HospitalDemographicInfo_Year" Member="Years" ThisKey="HospitalDemographicID" OtherKey="HospitalDemographicID" Type="Year" />
+      <Association Name="HospitalDemographicInfo_HospitalUpload" Member="HospitalUploads" ThisKey="HospitalDemographicID" OtherKey="HospitalDemographicID" Type="HospitalUpload" />
+      <Association Name="HospitalDemographicInfo_MultiUserDemographic" Member="MultiUserDemographics" ThisKey="HospitalDemographicID" OtherKey="HospitalDemographicID" Type="MultiUserDemographic" />
+      <Association Name="HospitalDemographicInfo_NursePDAInfo" Member="NursePDAInfos" ThisKey="HospitalDemographicID" OtherKey="HospitalDemographicID" Type="NursePDAInfo" />
+      <Association Name="HospitalInfo_HospitalDemographicInfo" Member="HospitalInfo" ThisKey="HospitalInfoID" OtherKey="HospitalInfoID" Type="HospitalInfo" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HospitalInfo" Member="HospitalInfos">
+    <Type Name="HospitalInfo">
+      <Column Name="HospitalInfoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RecordCounter" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HospitalName" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ChiefNursingOfficerFirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ChiefNursingOfficerLastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ChiefNursingOfficerPhone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ChiefNursingOfficerEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Zip" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="IsCollapse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDynamic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="HospitalInfo_HospitalDemographicInfo" Member="HospitalDemographicInfos" ThisKey="HospitalInfoID" OtherKey="HospitalInfoID" Type="HospitalDemographicInfo" />
+      <Association Name="HospitalInfo_MultiUserHospital" Member="MultiUserHospitals" ThisKey="HospitalInfoID" OtherKey="HospitalInfoID" Type="MultiUserHospital" />
+      <Association Name="State_HospitalInfo" Member="State" ThisKey="StateID" OtherKey="StateID" Type="State" IsForeignKey="true" />
+      <Association Name="UserInfo_HospitalInfo" Member="UserInfo" ThisKey="UserID" OtherKey="UserID" Type="UserInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HospitalType" Member="HospitalTypes">
+    <Type Name="HospitalType">
+      <Column Name="HospitalTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HospitalTypeName" Type="System.String" DbType="VarChar(102) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HospitalUploads" Member="HospitalUploads">
+    <Type Name="HospitalUpload">
+      <Column Name="HospitalUploadID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UploadedFileName" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="HospitalDemographicID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OriginalFileName" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FilePath" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Month" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsDataSaved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="HospitalDemographicInfo_HospitalUpload" Member="HospitalDemographicInfo" ThisKey="HospitalDemographicID" OtherKey="HospitalDemographicID" Type="HospitalDemographicInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LastLocation" Member="LastLocations">
+    <Type Name="LastLocation">
+      <Column Name="LastLocationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LastLocation" Member="LastLocation1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ValidateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RenameLastLocation" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Location" Member="Locations">
+    <Type Name="Location">
+      <Column Name="LocationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Location" Member="Location1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ValidateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RenameLocation" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LocationCategory" Member="LocationCategories">
+    <Type Name="LocationCategory">
+      <Column Name="LocationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LocationCategory" Member="LocationCategory1" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MaintainControlState" Member="MaintainControlStates">
+    <Type Name="MaintainControlState">
+      <Column Name="MaintainControlStateID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Year" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Month" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="UserInfo_MaintainControlState" Member="UserInfo" ThisKey="UserID" OtherKey="UserID" Type="UserInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Months" Member="Months">
+    <Type Name="Month">
+      <Column Name="MonthID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MonthName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="YearID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Year_Month" Member="Year" ThisKey="YearID" OtherKey="YearID" Type="Year" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MultiUserDemographic" Member="MultiUserDemographics">
+    <Type Name="MultiUserDemographic">
+      <Column Name="MultiUserDemographicID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HospitalDemographicID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PermissionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsCollapse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="HospitalDemographicInfo_MultiUserDemographic" Member="HospitalDemographicInfo" ThisKey="HospitalDemographicID" OtherKey="HospitalDemographicID" Type="HospitalDemographicInfo" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Permission_MultiUserDemographic" Member="Permission" ThisKey="PermissionID" OtherKey="PermissionID" Type="Permission" IsForeignKey="true" />
+      <Association Name="UserInfo_MultiUserDemographic" Member="UserInfo" ThisKey="UserID" OtherKey="UserID" Type="UserInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MultiUserHospital" Member="MultiUserHospitals">
+    <Type Name="MultiUserHospital">
+      <Column Name="MultiUserHospitalID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HospitalInfoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PermissionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsCollapse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="HospitalInfo_MultiUserHospital" Member="HospitalInfo" ThisKey="HospitalInfoID" OtherKey="HospitalInfoID" Type="HospitalInfo" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Permission_MultiUserHospital" Member="Permission" ThisKey="PermissionID" OtherKey="PermissionID" Type="Permission" IsForeignKey="true" />
+      <Association Name="UserInfo_MultiUserHospital" Member="UserInfo" ThisKey="UserID" OtherKey="UserID" Type="UserInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NationalDatabase" Member="NationalDatabases">
+    <Type Name="NationalDatabase">
+      <Column Name="NationalDatabaseID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NationalDatabaseCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TypeValueID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ValueText" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Value" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="NationalDatabaseCategory_NationalDatabase" Member="NationalDatabaseCategory" ThisKey="NationalDatabaseCategoryID" OtherKey="NationalDatabaseCategoryID" Type="NationalDatabaseCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NationalDatabaseCategory" Member="NationalDatabaseCategories">
+    <Type Name="NationalDatabaseCategory">
+      <Column Name="NationalDatabaseCategoryID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NationalDatabaseCategoryName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="NationalDatabaseCategory_NationalDatabase" Member="NationalDatabases" ThisKey="NationalDatabaseCategoryID" OtherKey="NationalDatabaseCategoryID" Type="NationalDatabase" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Notification" Member="Notifications">
+    <Type Name="Notification">
+      <Column Name="NotificationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SenderID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NursePDADetail" Member="NursePDADetails">
+    <Type Name="NursePDADetail">
+      <Column Name="NurserDetailID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NurseID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryGroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResourceRequirementID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResourceText" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="LastLocationID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastLocationDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LastLocationTime" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LastLocationText" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="LocationID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LocationDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LocationTime" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LocationText" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ActivityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivityDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ActivityTime" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ActivityText" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SubActivityID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubActivityDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SubActivityTime" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SubActivityText" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CognitiveCategory" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="IsErrorInResourceRequirement" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInCognitiveCategory" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsErrorInLastLocation" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInLocation" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInActivity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInSubActivity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorExist" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsActiveError" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ActiveError1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveError2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveError3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveError4" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="NursePDAInfo_NursePDADetail" Member="NursePDAInfo" ThisKey="NurseID" OtherKey="NurseID" Type="NursePDAInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NursePDAInfo" Member="NursePDAInfos">
+    <Type Name="NursePDAInfo">
+      <Column Name="NurseID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HospitalDemographicID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HospitalUploadID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NurseName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Year" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Month" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="PatientsPerNurse" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConfigName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PDAUserName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FileRefference" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="UnitName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SoftwareVersion" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsCollapseYear" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsCollapseMonth" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAdminCollapseYear" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAdminCollapseMonth" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInNurseName" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInPatientsPerNurse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInConfigName" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInPDAUserName" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInUnitName" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorExist" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsErrorInDetailData" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="NursePDAInfo_NursePDADetail" Member="NursePDADetails" ThisKey="NurseID" OtherKey="NurseID" Type="NursePDADetail" />
+      <Association Name="NursePDAInfo_NursePDASpecialType" Member="NursePDASpecialTypes" ThisKey="NurseID" OtherKey="NurseID" Type="NursePDASpecialType" />
+      <Association Name="HospitalDemographicInfo_NursePDAInfo" Member="HospitalDemographicInfo" ThisKey="HospitalDemographicID" OtherKey="HospitalDemographicID" Type="HospitalDemographicInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NursePDASpecialType" Member="NursePDASpecialTypes">
+    <Type Name="NursePDASpecialType">
+      <Column Name="SpecialTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NurseID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SpecialCategory" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="SpecialActivity" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Time" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="NursePDAInfo_NursePDASpecialType" Member="NursePDAInfo" ThisKey="NurseID" OtherKey="NurseID" Type="NursePDAInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OwnerShipType" Member="OwnerShipTypes">
+    <Type Name="OwnerShipType">
+      <Column Name="OwnerShipTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OwnerShipTypeName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Permission" Member="Permissions">
+    <Type Name="Permission">
+      <Column Name="PermissionID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Permission" Member="Permission1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Permission_MultiUserDemographic" Member="MultiUserDemographics" ThisKey="PermissionID" OtherKey="PermissionID" Type="MultiUserDemographic" />
+      <Association Name="Permission_MultiUserHospital" Member="MultiUserHospitals" ThisKey="PermissionID" OtherKey="PermissionID" Type="MultiUserHospital" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PharmacyType" Member="PharmacyTypes">
+    <Type Name="PharmacyType">
+      <Column Name="PharmacyTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PharmacyName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProfileType" Member="ProfileTypes">
+    <Type Name="ProfileType">
+      <Column Name="ProfileTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProfileName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="AuthorName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="ProfileType_CategoryProfile" Member="CategoryProfiles" ThisKey="ProfileTypeID" OtherKey="ProfileTypeID" Type="CategoryProfile" />
+      <Association Name="ProfileType_ProfileUser" Member="ProfileUsers" ThisKey="ProfileTypeID" OtherKey="ProfileTypeID" Type="ProfileUser" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProfileUser" Member="ProfileUsers">
+    <Type Name="ProfileUser">
+      <Column Name="ProfileUserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProfileTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsShared" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ProfileType_ProfileUser" Member="ProfileType" ThisKey="ProfileTypeID" OtherKey="ProfileTypeID" Type="ProfileType" IsForeignKey="true" />
+      <Association Name="UserInfo_ProfileUser" Member="UserInfo" ThisKey="UserID" OtherKey="UserID" Type="UserInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RequestForTypes" Member="RequestForTypes">
+    <Type Name="RequestForType">
+      <Column Name="RequestID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HospitalName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="HospitalUnitName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="MessageDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResourceRequirement" Member="ResourceRequirements">
+    <Type Name="ResourceRequirement">
+      <Column Name="ResourceRequirementID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResourceRequirement" Member="ResourceRequirement1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ValidateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="ValidateFileField_ResourceRequirement" Member="ValidateFileField" ThisKey="ValidateID" OtherKey="ValidateID" Type="ValidateFileField" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.State" Member="States">
+    <Type Name="State">
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CountryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StateName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="StateAbbreviation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="State_HospitalInfo" Member="HospitalInfos" ThisKey="StateID" OtherKey="StateID" Type="HospitalInfo" />
+      <Association Name="Country_State" Member="Country" ThisKey="CountryID" OtherKey="CountryID" Type="Country" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SubActivities" Member="SubActivities">
+    <Type Name="SubActivity">
+      <Column Name="SubActivityID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SubActivity" Member="SubActivity1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ValidateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UnitType" Member="UnitTypes">
+    <Type Name="UnitType">
+      <Column Name="UnitTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UnitTypeName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DeletedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserType" Member="UserTypes">
+    <Type Name="UserType">
+      <Column Name="UserTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserType" Member="UserType1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UserType_UserInfo" Member="UserInfos" ThisKey="UserTypeID" OtherKey="UserTypeID" Type="UserInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ValidateFileFields" Member="ValidateFileFields">
+    <Type Name="ValidateFileField">
+      <Column Name="ValidateID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ConfigurationName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IsUseLastLocation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUseLocation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUseActivity" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUseSubActivity" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUseType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUseDefaultCategory" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUseResourceRequirement" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUseCognitiveCategory" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="ValidateFileField_ResourceRequirement" Member="ResourceRequirements" ThisKey="ValidateID" OtherKey="ValidateID" Type="ResourceRequirement" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Validation" Member="Validations">
+    <Type Name="Validation">
+      <Column Name="ValidationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LocationID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ActivityID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubActivityID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Validation_CategoryProfile" Member="CategoryProfiles" ThisKey="ValidationID" OtherKey="ValidationID" Type="CategoryProfile" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ValueAddedTypes" Member="ValueAddedTypes">
+    <Type Name="ValueAddedType">
+      <Column Name="TypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Abbreviation" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ViewRequest" Member="ViewRequests">
+    <Type Name="ViewRequest">
+      <Column Name="RequestID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FromUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HospitalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HospitalDemographicDetailID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PermissionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserInfo" Member="UserInfos">
+    <Type Name="UserInfo">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SecurityQuestion" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="UserActivationRequest" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SecurityAnswer" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccessRequest" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Association Name="UserInfo_HospitalInfo" Member="HospitalInfos" ThisKey="UserID" OtherKey="UserID" Type="HospitalInfo" />
+      <Association Name="UserInfo_MaintainControlState" Member="MaintainControlStates" ThisKey="UserID" OtherKey="UserID" Type="MaintainControlState" />
+      <Association Name="UserInfo_MultiUserDemographic" Member="MultiUserDemographics" ThisKey="UserID" OtherKey="UserID" Type="MultiUserDemographic" />
+      <Association Name="UserInfo_MultiUserHospital" Member="MultiUserHospitals" ThisKey="UserID" OtherKey="UserID" Type="MultiUserHospital" />
+      <Association Name="UserInfo_ProfileUser" Member="ProfileUsers" ThisKey="UserID" OtherKey="UserID" Type="ProfileUser" />
+      <Association Name="UserType_UserInfo" Member="UserType" ThisKey="UserTypeID" OtherKey="UserTypeID" Type="UserType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="ActivitiesCategories">
+    <Type Name="ActivitiesCategory">
+      <Column Name="ActivitiesID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ActivitiesCategory" Member="ActivitiesCategory1" Type="System.String" DbType="VarChar(200)" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetLocationName" Method="GetLocationName">
+    <Parameter Name="LocationID" Parameter="locationID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetLocationNameResult">
+      <Column Name="Location" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetLastLocationName" Method="GetLastLocationName">
+    <Parameter Name="LastLocationID" Parameter="lastLocationID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetLastLocationNameResult">
+      <Column Name="LastLocation" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetRenameLastLocation" Method="GetRenameLastLocation">
+    <Parameter Name="LastLocationID" Parameter="lastLocationID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetRenameLastLocationResult">
+      <Column Name="RenameLastLocation" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

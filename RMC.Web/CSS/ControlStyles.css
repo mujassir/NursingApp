@@ -1,0 +1,255 @@
+﻿body
+{
+}
+
+.aspButton
+{
+    width: 100px;
+    height: 24px;
+    border: #000000 0px none;
+    background: url(../Images/buttonHover.jpg) repeat-x;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 24px;
+}
+.aspButton:Hover
+{
+    width: 100px;
+    height: 24px;
+    border: #000000 0px none;
+    background: url(../Images/button.jpg) repeat-x;
+    text-align: center;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.aspButtonDisable
+{
+    width: 100px;
+    height: 24px;
+    border: #000000 0px none;
+    background: url(../Images/buttonDisable.jpg) repeat-x;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 24px;
+}
+
+.aspSquareButton
+{
+    width: 100px;
+    height: 24px;
+    border: #000000 0px none;
+    background: url(../Images/buttonHover.jpg) repeat-x;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 22px;
+}
+
+.aspSquareButton:Hover
+{
+    width: 24px;
+    height: 24px;
+    border: #000000 0px none;
+    background: url(../Images/button.jpg) repeat-x;
+    text-align: center;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.aspSquareButtonDisable
+{
+    width: 24px;
+    height: 24px;
+    border: #000000 0px none;
+    background: url(../Images/buttonDisable.jpg) repeat-x;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 22px;
+}
+
+.aspTextBox
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    width: 125px;
+}
+
+.aspDropDownList
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    width: 130px;
+}
+
+.aspListBox
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    width: 130px;
+}
+
+.aspDataList
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    width: 130px;
+}
+
+/*****************************GridView Style**********************************/
+
+.GridViewStyle
+{
+    border-right: 2px solid #A7A6AA;
+    border-bottom: 2px solid #A7A6AA;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    padding: 4px;
+}
+
+.GridViewStyleWidth
+{
+    border-right: 2px solid #A7A6AA;
+    border-bottom: 2px solid #A7A6AA;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    padding: 4px;
+    table-layout: fixed;
+}
+
+.GridViewStyle a
+{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.GridViewHeaderStyle th
+{
+    border-left: 1px solid #EBE9ED;
+    border-right: 1px solid #EBE9ED;
+}
+
+.GridViewHeaderStyle
+{
+    background-color: #06569d;
+    font-weight: bold;
+    font-size: 11px;
+    color: White;
+}
+
+.GridViewFooterStyle
+{
+    background-color: #5D7B9D;
+    font-weight: bold;
+    font-size: 11px;
+    color: White;
+}
+
+.GridViewRowStyle
+{
+    background-color: #F7F6F3;
+    font-size: 11px;
+    color: #06569D;
+}
+
+.GridViewRowStyle a
+{
+    background-color: #F7F6F3;
+    font-size: 11px;
+    color: #284775;
+}
+
+.GridViewAlternatingRowStyle
+{
+    background-color: #FFFFFF;
+    font-size: 11px;
+    color: #06569D;
+}
+
+.GridViewAlternatingRowStyle a
+{
+    background-color: #FFFFFF;
+    font-size: 11px;
+    color: #284775;
+}
+
+.GridViewRowStyle td, .GridViewAlternatingRowStyle td
+{
+    border: 1px solid #EBE9ED;
+}
+
+.GridViewSelectedRowStyle
+{
+    background-color: #E2DED6;
+    font-weight: bold;
+    color: #333333;
+}
+
+.GridViewPagerStyle
+{
+    background-color: #284775;
+    font-weight: bold;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.GridViewPagerStyle table /* to center the paging linksD9ECFF*/
+{
+    margin: 0 auto 0 auto;
+}
+
+.GridViewEmptyRowStyle
+{
+    background-color: #06569d;
+    font-size: 11px;
+    font-weight: bold;
+    color: White;
+}
+
+/*********** Customize Paging ************/
+
+.RowStyle
+{
+    background-color: #06569d;
+    font-weight: bold;
+    font-size: 11px;   
+    color: White;
+    height:25px;    
+}
+
+.StartColumnStyle
+{
+    border-left: 2px solid #A7A6AA;
+    border-top: 2px solid #A7A6AA;
+    border-bottom: 2px solid #A7A6AA;
+}
+
+.ColumnStyle
+{   
+    border-top: 2px solid #A7A6AA;
+    border-bottom: 2px solid #A7A6AA;
+}
+
+.LastColumnStyle
+{
+    border-right: 2px solid #A7A6AA;
+    border-top: 2px solid #A7A6AA;
+    border-bottom: 2px solid #A7A6AA;
+}

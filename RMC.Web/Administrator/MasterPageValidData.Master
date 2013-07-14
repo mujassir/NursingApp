@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageValidData.master.cs"
+    Inherits="RMC.Web.Administrator.MasterPageValidData" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="../CSS/treeview.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../CSS/template.css" type="text/css" />
+    <link href="../CSS/ControlStyles.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="containerpopupmaster">
+        <div style="margin: 0px auto; width: 800px;">
+            <div style="height: 10px;">
+            </div>
+            <!--end of head content-->
+            <div id="bottom-content">
+                <div id="content">
+                    <div class="content-inner">
+                        <div class="top">
+                            <div class="topleft">
+                                <div class="topright">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapers">
+                            <div id="wrapper" style="width: 770px;">
+                                <div style="float: left; width: 770px;">
+                                    <%--<div id="divInner" 
+                                        style="float: left; width: 100%; vertical-align: top; text-align: left; padding-top: 15px;">
+                                        <div style="float: left; width: 100%; overflow: hidden; position: relative;
+                                            z-index: 0;">--%>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        <p>
+                                        </p>
+                                    </asp:ContentPlaceHolder>
+                                    <%--</div>
+                                    </div>--%>
+                                    <div style="height: 150px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of wrap-arin-->
+                        <div class="bottom">
+                            <div class="bottomleft">
+                                <div class="bottomright">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

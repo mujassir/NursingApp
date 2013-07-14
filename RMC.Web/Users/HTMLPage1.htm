@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Untitled Page</title>
+</head>
+<body>
+    <table width="430px">
+        <tr>
+            <td align="center" style="color: #06569d; font-weight: bold;" colspan="2">
+                The following User apply for Registration.
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="color: #06569d; font-weight: bold;" width="190px">
+                Company Name &nbsp&nbsp
+            </td>
+            <td align="left">
+                <input name="TextBoxCompanyName" type="text" maxlength="50" id="TextBoxCompanyName"
+                    tabindex="4" style="width: 160px;" />
+                <span id="RequiredFieldValidatorCompanyName" style="color: Red; display: none;">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="color: #06569d; font-weight: bold;" width="190px">
+                First Name &nbsp&nbsp
+            </td>
+            <td align="left">
+                <input name="TextBoxPrimaryFirstName" type="text" maxlength="50" id="TextBoxPrimaryFirstName"
+                    tabindex="4" onkeydown="return validateNonNumber(event);" style="width: 160px;" />
+                <span id="RequiredFieldValidatorPrimaryFirstName" style="color: Red; display: none;">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="color: #06569d; font-weight: bold;" width="190px">
+                Last Name &nbsp&nbsp
+            </td>
+            <td align="left">
+                <input name="TextBoxPrimaryLastName" type="text" maxlength="50" id="TextBoxPrimaryLastName"
+                    tabindex="4" onkeydown="return validateNonNumber(event);" style="width: 160px;" />
+                <span id="RequiredFieldValidatorPrimaryLastName" style="color: Red; display: none;">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="color: #06569d; font-weight: bold;" width="190px">
+                Phone &nbsp&nbsp
+            </td>
+            <td align="left">
+                <input name="TextBoxPrimaryPhone" type="text" maxlength="15" id="TextBoxPrimaryPhone"
+                    tabindex="5" style="width: 160px;" />
+                <span id="RequiredFieldValidatorPrimaryPhone" style="color: Red; display: none;">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="color: #06569d; font-weight: bold;" width="190px">
+                Fax&nbsp;&nbsp;
+            </td>
+            <td align="left">
+                <input name="TextBoxPrimaryFax" type="text" maxlength="15" id="TextBoxPrimaryFax"
+                    tabindex="6" style="width: 160px;" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="color: #06569d; font-weight: bold;" width="190px">
+                Email &nbsp&nbsp
+            </td>
+            <td align="left">
+                <input name="TextBoxPrimaryEmail" type="text" vcard_name="vCard.Email" id="TextBoxPrimaryEmail"
+                    tabindex="7" style="width: 160px;" />
+                <span id="RequiredFieldValidatorPrimaryEmail" style="color: Red; display: none;">
+                </span><span id="RegularExpressionValidatorPrimaryEmail" style="color: Red; display: none;">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="color: #06569d; font-weight: bold;" width="190px">
+                Security Question &nbsp&nbsp
+            </td>
+            <td align="left">
+                <input name="TextBoxPrimarySecurityQuestion" type="text" maxlength="500" id="TextBoxPrimarySecurityQuestion"
+                    tabindex="10" style="width: 160px;" />
+                <span id="RequiredFieldValidatorSecurityQuestion" style="color: Red; display: none;">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="color: #06569d; font-weight: bold;" width="190px">
+                Security Answer &nbsp&nbsp
+            </td>
+            <td align="left">
+                <input name="TextBoxPrimarySecurityAnswer" type="text" maxlength="500" id="TextBoxPrimarySecurityAnswer"
+                    tabindex="11" style="width: 160px;" />
+                <span id="RequiredFieldValidatorSecurityAnswer" style="color: Red; display: none;">
+                </span>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

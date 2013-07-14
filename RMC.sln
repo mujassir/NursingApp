@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMC.DataService", "RMC.DataService\RMC.DataService.csproj", "{B3910E23-1E19-46A3-8D54-C1A83C72CD5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMC.BussinessService", "RMC.BussinessService\RMC.BussinessService.csproj", "{459CCB2C-AE51-4C05-9180-49872470DCE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMC.BusinessEntities", "RMC.BusinessEntities\RMC.BusinessEntities.csproj", "{4511CC43-4582-46E7-80FE-9A91DA03F37E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMC.LogExceptions", "RMC.LogExceptions\RMC.LogExceptions.csproj", "{E629C66C-233D-455F-96B3-6DDDAEA99A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncrptDecrpt", "EncrptDecrpt\EncrptDecrpt.csproj", "{85A17C87-97A1-432F-BE81-9AD9DF35C1C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryStringHandler", "QueryStringHandler\QueryStringHandler.csproj", "{DD0520D9-BE87-436A-AD5B-4E1B92DC1FDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMC.Web", "RMC.Web\RMC.Web.csproj", "{F7538D4C-075E-4994-B48E-C4EAEF92AC33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3910E23-1E19-46A3-8D54-C1A83C72CD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3910E23-1E19-46A3-8D54-C1A83C72CD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3910E23-1E19-46A3-8D54-C1A83C72CD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3910E23-1E19-46A3-8D54-C1A83C72CD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459CCB2C-AE51-4C05-9180-49872470DCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459CCB2C-AE51-4C05-9180-49872470DCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459CCB2C-AE51-4C05-9180-49872470DCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459CCB2C-AE51-4C05-9180-49872470DCE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4511CC43-4582-46E7-80FE-9A91DA03F37E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4511CC43-4582-46E7-80FE-9A91DA03F37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4511CC43-4582-46E7-80FE-9A91DA03F37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4511CC43-4582-46E7-80FE-9A91DA03F37E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E629C66C-233D-455F-96B3-6DDDAEA99A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E629C66C-233D-455F-96B3-6DDDAEA99A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E629C66C-233D-455F-96B3-6DDDAEA99A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E629C66C-233D-455F-96B3-6DDDAEA99A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A17C87-97A1-432F-BE81-9AD9DF35C1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A17C87-97A1-432F-BE81-9AD9DF35C1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A17C87-97A1-432F-BE81-9AD9DF35C1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A17C87-97A1-432F-BE81-9AD9DF35C1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0520D9-BE87-436A-AD5B-4E1B92DC1FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0520D9-BE87-436A-AD5B-4E1B92DC1FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0520D9-BE87-436A-AD5B-4E1B92DC1FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0520D9-BE87-436A-AD5B-4E1B92DC1FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7538D4C-075E-4994-B48E-C4EAEF92AC33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7538D4C-075E-4994-B48E-C4EAEF92AC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7538D4C-075E-4994-B48E-C4EAEF92AC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7538D4C-075E-4994-B48E-C4EAEF92AC33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

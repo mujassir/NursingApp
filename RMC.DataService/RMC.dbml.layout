@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 24.5, 31.875" name="RMC">
+  <DataContextMoniker Name="/RMCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1477f2b8-7884-40c8-8000-928a56b26a7c" absoluteBounds="6.75, 6.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/RMCDataContext/Activity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4639e8e3-5c46-494b-8cab-bc6d4535adaa" absoluteBounds="6.765, 7.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2f189405-5bda-4100-841a-7f32b6ef5d1c" absoluteBounds="14.75, 11.875, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/RMCDataContext/Year" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7793717-305d-420d-a9c2-3b7f85359cfb" absoluteBounds="14.765, 12.335, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="747a5424-cda5-43c0-a302-e674ff54f154" absoluteBounds="9.75, 3.75, 2, 6.6839624023437505">
+      <DataClassMoniker Name="/RMCDataContext/BenchmarkFilter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59cd86d8-61da-430e-b1e2-39470852e2df" absoluteBounds="9.765, 4.21, 1.9700000000000002, 6.12396240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d944c1ad-b429-4189-860d-df2f0f2693f6" absoluteBounds="12.75, 0.75, 2, 1.2605004882812503">
+      <DataClassMoniker Name="/RMCDataContext/CategoryGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1061a683-47bd-4a6a-84a4-1a4c94372b3d" absoluteBounds="12.765, 1.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0378767f-366b-4f9b-9cc1-1a0e93464dc0" absoluteBounds="6.25, 11.125, 2, 2.7396264648437487">
+      <DataClassMoniker Name="/RMCDataContext/CategoryProfile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a93af982-cecb-4af8-afe3-cf525e5dc484" absoluteBounds="6.265, 11.585, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f3af42a-81be-4d92-9c8e-4c66df9f53b7" absoluteBounds="12.75, 3.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/RMCDataContext/CognitiveCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0519711-9b14-4e99-9687-3e7454116015" absoluteBounds="12.765, 4.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="845d264e-6309-4ab2-847f-3eb938ef1cfe" absoluteBounds="6.75, 1, 2, 1.2605004882812503">
+      <DataClassMoniker Name="/RMCDataContext/ColumnName" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ef9f68f-99c0-4c33-88f9-09d75e31da72" absoluteBounds="6.765, 1.46, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="744fc08c-f2a1-4171-ac5c-c5aeae40ecef" absoluteBounds="12.75, 6.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/RMCDataContext/ContactUs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="98601368-f288-4073-9e39-6894e1c336b9" absoluteBounds="12.765, 7.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bbd651b9-2772-4482-8ad8-cfd70fd17728" absoluteBounds="3.75, 20.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/RMCDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da65a401-effc-45db-917c-d8c5c8b5da8f" absoluteBounds="3.765, 21.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55bd8596-ab13-4e4f-96bf-c7058b82ffbf" absoluteBounds="15.75, 0.75, 2, 3.3970157877604166">
+      <DataClassMoniker Name="/RMCDataContext/DataImportConfigLocation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a4c58a8-f1c2-42f5-b721-1735a52de45b" absoluteBounds="15.765, 1.21, 1.9700000000000002, 2.8370157877604165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89a2b751-0701-41bf-863f-bfa25a1de34f" absoluteBounds="9.5, 0.875, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/RMCDataContext/DynamicData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4863cc7-298a-4820-9982-6b8aab00d267" absoluteBounds="9.515, 1.335, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89193124-4b66-4f5f-accc-5ff8543cda51" absoluteBounds="15.75, 5.75, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/RMCDataContext/ErrorLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40a1d070-1710-4c9d-9122-25846d942cb5" absoluteBounds="15.765, 6.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8667693d-f22b-4c36-bc21-8a28f53e66b8" absoluteBounds="12, 17.75, 2, 4.5474471028645809">
+      <DataClassMoniker Name="/RMCDataContext/HospitalDemographicInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7304a30-74e8-47ab-bf18-60f7ce6870bf" absoluteBounds="12.015, 18.21, 1.9700000000000002, 3.987447102864583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="641fee62-129f-47e8-b3c8-2bc61c5a3ce5" absoluteBounds="9.25, 14.25, 2, 4.3830997721354166">
+      <DataClassMoniker Name="/RMCDataContext/HospitalInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c0df996f-1291-4468-afc0-6d8393bc10f0" absoluteBounds="9.265, 14.71, 1.9700000000000002, 3.823099772135417" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c175a4a-e901-4bb1-9844-49915234e4e1" absoluteBounds="0.75, 6.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/RMCDataContext/HospitalType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="73a368f0-c577-4280-992e-2664704d8efe" absoluteBounds="0.765, 7.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f0a9658-b572-4356-a8d9-705a896e997a" absoluteBounds="14.75, 17.375, 2, 3.2326684570312523">
+      <DataClassMoniker Name="/RMCDataContext/HospitalUpload" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47d6094d-d03d-4631-9cc5-02962145d239" absoluteBounds="14.765, 17.835, 1.9700000000000002, 2.67266845703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6226f00-c9c7-4d7a-a1e0-ab9d224a3192" absoluteBounds="15.75, 8.75, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/RMCDataContext/LastLocation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="617cad4c-dd07-49f7-99fa-1f392765bfb7" absoluteBounds="15.765, 9.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6cbdde7-1118-4d80-860f-408963ee34b3" absoluteBounds="18.75, 0.75, 2, 1.5891951497395829">
+      <DataClassMoniker Name="/RMCDataContext/Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08cf24eb-371d-495b-8685-262eea2ce5d9" absoluteBounds="18.765, 1.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d4427d54-098e-465f-8dde-6e8410d2b1d9" absoluteBounds="14.75, 14.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/RMCDataContext/LocationCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f880a1f5-95e9-4c8e-9a36-801aa94c888c" absoluteBounds="14.765, 15.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb1aec8f-ee13-4a6f-8f42-da6fb06ec39b" absoluteBounds="6.25, 17.75, 2, 2.0822371419270809">
+      <DataClassMoniker Name="/RMCDataContext/MaintainControlState" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20b58327-2658-4b57-a4e5-39a20656da67" absoluteBounds="6.265, 18.21, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cbde2b24-52d0-4db4-8f1b-a5cdc98db4e1" absoluteBounds="17.5, 11.875, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/RMCDataContext/Month" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92f50b48-28cf-4795-abcf-1e71841fced6" absoluteBounds="17.515, 12.335, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4965a99c-ead5-4e15-8891-e754f435c4a8" absoluteBounds="17.75, 17, 2, 2.7396264648437523">
+      <DataClassMoniker Name="/RMCDataContext/MultiUserDemographic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1a66e1b-202f-4862-9c24-b54938801177" absoluteBounds="17.765, 17.46, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b2c8470-2d47-4774-824d-80f4299d74c1" absoluteBounds="12, 14.125, 2, 2.7396264648437505">
+      <DataClassMoniker Name="/RMCDataContext/MultiUserHospital" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d4073fd-852e-4bb7-ac08-26fd18f3df56" absoluteBounds="12.015, 14.585, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ad3483e-9410-447f-96c0-8cea6f21e338" absoluteBounds="6.5, 3.875, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/RMCDataContext/NationalDatabase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="536beb4e-a102-4267-863f-e8c9106cc839" absoluteBounds="6.515, 4.335, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30d7f27e-e3b3-480e-8d9f-05db52f74330" absoluteBounds="3.75, 4.25, 2, 1.0961531575520827">
+      <DataClassMoniker Name="/RMCDataContext/NationalDatabaseCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e71b6dda-c2ff-4995-9a81-20e13fd07eb1" absoluteBounds="3.765, 4.71, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7401f35-b45b-4307-b21d-e94c2c851f6a" absoluteBounds="18.75, 3.75, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/RMCDataContext/Notification" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e70bc0c-ee9a-4e19-b3eb-ee8a305eac7c" absoluteBounds="18.765, 4.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f210f07-810b-4479-9677-7139a9911250" absoluteBounds="17.5, 23.75, 2, 7.8343937174479166">
+      <DataClassMoniker Name="/RMCDataContext/NursePDADetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b020ece-ce67-42cc-b86a-947c43bc71e5" absoluteBounds="17.515, 24.21, 1.9700000000000002, 7.2743937174479161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bec33a6f-72c9-45e8-a5a4-cdb075da628f" absoluteBounds="14.75, 23.625, 2, 5.6978784179687523">
+      <DataClassMoniker Name="/RMCDataContext/NursePDAInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7f11069-8a46-4b3d-96d7-1c41771ccd9b" absoluteBounds="14.765, 24.085, 1.9700000000000002, 5.13787841796875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f71922d4-a7ec-4f71-bdcb-e592df7e4fa4" absoluteBounds="17.5, 21.25, 2, 1.7535424804687523">
+      <DataClassMoniker Name="/RMCDataContext/NursePDASpecialType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee8c5c6e-8794-4a66-9a6c-ce168feb467a" absoluteBounds="17.515, 21.71, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="740131ac-d477-4b5e-85d0-c0a8b39b649b" absoluteBounds="17.75, 14.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/RMCDataContext/OwnerShipType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61615000-b19d-4ad7-836a-ebe2a7a1c6ec" absoluteBounds="17.765, 15.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d260c4f-7004-4525-a64a-ecbe61f7d465" absoluteBounds="9.25, 11.875, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/RMCDataContext/Permission" />
+      <nestedChildShapes>
+        <elementListCompartment Id="248b09f9-e6c1-4700-af3d-b308ef7480d6" absoluteBounds="9.265, 12.335, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b4735b49-f107-4779-98b9-238e8c889931" absoluteBounds="18.75, 6.75, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/RMCDataContext/PharmacyType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15a821ae-52b7-4927-8a2b-ad93c048a002" absoluteBounds="18.765, 7.21, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="477f929a-b28d-4438-9adf-137486e80000" absoluteBounds="3.5, 11.625, 2, 1.7535424804687487">
+      <DataClassMoniker Name="/RMCDataContext/ProfileType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6410c76f-1e3c-4add-9531-1587774297e4" absoluteBounds="3.515, 12.085, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="107362cf-f810-43aa-acf5-1c5f308fc9a2" absoluteBounds="6.25, 14.75, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/RMCDataContext/ProfileUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6eda358a-3a69-4d7d-9339-3b7c4d555a21" absoluteBounds="6.265, 15.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c571eac-c20d-41ce-9001-6bb27b4883a8" absoluteBounds="20.75, 10.75, 2, 2.2465844726562487">
+      <DataClassMoniker Name="/RMCDataContext/RequestForType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54c90827-934e-48e6-90ef-33acbf5cb59f" absoluteBounds="20.765, 11.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a36f6222-e86b-4726-a165-a30533493c59" absoluteBounds="3.5, 1.5, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/RMCDataContext/ResourceRequirement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="260b4d05-488b-4234-8e0f-c27aa29ecacf" absoluteBounds="3.515, 1.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3e358a4d-47ad-4235-80eb-7582c66698b7" absoluteBounds="6.5, 20.75, 2, 1.5891951497395809">
+      <DataClassMoniker Name="/RMCDataContext/State" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4e139b0-6fb7-46e1-82d7-13e35db6378c" absoluteBounds="6.515, 21.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="557b0df5-b6cf-46d2-8746-88bba1eeab2a" absoluteBounds="20.75, 13.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/RMCDataContext/SubActivity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a9a5c6a-c641-41e2-8af3-328e59b689f0" absoluteBounds="20.765, 14.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1ed3cdf-7a30-441a-aee7-1474ac6c3ab1" absoluteBounds="20.75, 16.75, 2, 2.2465844726562523">
+      <DataClassMoniker Name="/RMCDataContext/UnitType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7342e7b2-4315-4a1a-98df-4fc0aa05cb9a" absoluteBounds="20.765, 17.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56b26ebf-675a-4f8b-bc63-fe3ee9a4e1f4" absoluteBounds="0.75, 15.875, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/RMCDataContext/UserType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b73f3e13-7e93-4272-853e-c63ac0880c17" absoluteBounds="0.765, 16.335, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="615afdc8-1ad3-4cd5-ad3d-fbb800422c32" absoluteBounds="0.75, 1, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/RMCDataContext/ValidateFileField" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b657f28-d99a-4304-928e-b55b51ee78fe" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec854c5e-d928-40c4-803e-cf5a9d93993a" absoluteBounds="3.5, 8.625, 2, 1.7535424804687487">
+      <DataClassMoniker Name="/RMCDataContext/Validation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="396c0110-32c7-48a2-85d7-1606cc4d0680" absoluteBounds="3.515, 9.085, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a524207a-dd75-4e90-981d-bb8ced5f5b9a" absoluteBounds="20.75, 19.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/RMCDataContext/ValueAddedType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e0d81b4-7292-4cde-b8df-6c70de3aa178" absoluteBounds="20.765, 20.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fed07ed8-486b-43e4-bcea-d71cfb3e9017" absoluteBounds="21.75, 0.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/RMCDataContext/ViewRequest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="136383ac-b21b-4abe-96c7-03fc23a8af26" absoluteBounds="21.765, 1.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 1.63025024414063); (9.5 : 1.63025024414063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/ColumnName/ColumnName_DynamicData" />
+      <nodes>
+        <classShapeMoniker Id="845d264e-6309-4ab2-847f-3eb938ef1cfe" />
+        <classShapeMoniker Id="89a2b751-0701-41bf-863f-bfa25a1de34f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 17.75); (14.375 : 17.375); (14.375 : 12.5052502441406); (14.75 : 12.5052502441406)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/HospitalDemographicInfo/HospitalDemographicInfo_Year" />
+      <nodes>
+        <classShapeMoniker Id="8667693d-f22b-4c36-bc21-8a28f53e66b8" />
+        <classShapeMoniker Id="2f189405-5bda-4100-841a-7f32b6ef5d1c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 18.1915498860677); (12 : 18.1915498860677)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/HospitalInfo/HospitalInfo_HospitalDemographicInfo" />
+      <nodes>
+        <classShapeMoniker Id="641fee62-129f-47e8-b3c8-2bc61c5a3ce5" />
+        <classShapeMoniker Id="8667693d-f22b-4c36-bc21-8a28f53e66b8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 19.2100867285156); (14.75 : 19.2100867285156)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/HospitalDemographicInfo/HospitalDemographicInfo_HospitalUpload" />
+      <nodes>
+        <classShapeMoniker Id="8667693d-f22b-4c36-bc21-8a28f53e66b8" />
+        <classShapeMoniker Id="7f0a9658-b572-4356-a8d9-705a896e997a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 12.5052502441406); (17.5 : 12.5052502441406)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/Year/Year_Month" />
+      <nodes>
+        <classShapeMoniker Id="2f189405-5bda-4100-841a-7f32b6ef5d1c" />
+        <classShapeMoniker Id="cbde2b24-52d0-4db4-8f1b-a5cdc98db4e1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 20.9288342285156); (19.65625 : 20.9288342285156); (19.65625 : 19.7396264648438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/HospitalDemographicInfo/HospitalDemographicInfo_MultiUserDemographic" />
+      <nodes>
+        <classShapeMoniker Id="8667693d-f22b-4c36-bc21-8a28f53e66b8" />
+        <classShapeMoniker Id="4965a99c-ead5-4e15-8891-e754f435c4a8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 15.5573132324219); (12 : 15.5573132324219)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/HospitalInfo/HospitalInfo_MultiUserHospital" />
+      <nodes>
+        <classShapeMoniker Id="641fee62-129f-47e8-b3c8-2bc61c5a3ce5" />
+        <classShapeMoniker Id="2b2c8470-2d47-4774-824d-80f4299d74c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 4.79807657877604); (6.5 : 4.79807657877604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/NationalDatabaseCategory/NationalDatabaseCategory_NationalDatabase" />
+      <nodes>
+        <classShapeMoniker Id="30d7f27e-e3b3-480e-8d9f-05db52f74330" />
+        <classShapeMoniker Id="7ad3483e-9410-447f-96c0-8cea6f21e338" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 26.5364392089844); (17.5 : 26.5364392089844)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/NursePDAInfo/NursePDAInfo_NursePDADetail" />
+      <nodes>
+        <classShapeMoniker Id="bec33a6f-72c9-45e8-a5a4-cdb075da628f" />
+        <classShapeMoniker Id="6f210f07-810b-4479-9677-7139a9911250" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13 : 22.2974471028646); (13 : 26.4739392089844); (14.75 : 26.4739392089844)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/HospitalDemographicInfo/HospitalDemographicInfo_NursePDAInfo" />
+      <nodes>
+        <classShapeMoniker Id="8667693d-f22b-4c36-bc21-8a28f53e66b8" />
+        <classShapeMoniker Id="bec33a6f-72c9-45e8-a5a4-cdb075da628f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.75 : 23.625); (15.75 : 22.1267712402344); (17.5 : 22.1267712402344)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/NursePDAInfo/NursePDAInfo_NursePDASpecialType" />
+      <nodes>
+        <classShapeMoniker Id="bec33a6f-72c9-45e8-a5a4-cdb075da628f" />
+        <classShapeMoniker Id="f71922d4-a7ec-4f71-bdcb-e592df7e4fa4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 13.1355004882812); (11.625 : 13.5105004882812); (12.9166666666667 : 13.5105004882812 : JumpStart); (13.0833333333333 : 13.5105004882812 : JumpEnd); (14.2916666666667 : 13.5105004882812 : JumpStart); (14.4583333333333 : 13.5105004882812 : JumpEnd); (17.375 : 13.5105004882812); (17.375 : 16.625); (19.0546153846154 : 17)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/Permission/Permission_MultiUserDemographic" />
+      <nodes>
+        <classShapeMoniker Id="6d260c4f-7004-4525-a64a-ecbe61f7d465" />
+        <classShapeMoniker Id="4965a99c-ead5-4e15-8891-e754f435c4a8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 12.4739977441406); (13 : 12.4739977441406); (13 : 14.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/Permission/Permission_MultiUserHospital" />
+      <nodes>
+        <classShapeMoniker Id="6d260c4f-7004-4525-a64a-ecbe61f7d465" />
+        <classShapeMoniker Id="2b2c8470-2d47-4774-824d-80f4299d74c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.5017712402344); (6.25 : 12.5017712402344)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/ProfileType/ProfileType_CategoryProfile" />
+      <nodes>
+        <classShapeMoniker Id="477f929a-b28d-4438-9adf-137486e80000" />
+        <classShapeMoniker Id="0378767f-366b-4f9b-9cc1-1a0e93464dc0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.3771926016376); (5.875 : 13.7521926016376); (5.875 : 15.5445975748698); (6.25 : 15.5445975748698)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/ProfileType/ProfileType_ProfileUser" />
+      <nodes>
+        <classShapeMoniker Id="477f929a-b28d-4438-9adf-137486e80000" />
+        <classShapeMoniker Id="107362cf-f810-43aa-acf5-1c5f308fc9a2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.40625 : 20.75); (8.40625 : 17.0445975748698); (9.25 : 17.0445975748698)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/State/State_HospitalInfo" />
+      <nodes>
+        <classShapeMoniker Id="3e358a4d-47ad-4235-80eb-7582c66698b7" />
+        <classShapeMoniker Id="641fee62-129f-47e8-b3c8-2bc61c5a3ce5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 21.4624239095052); (6.5 : 21.4624239095052)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/Country/Country_State" />
+      <nodes>
+        <classShapeMoniker Id="bbd651b9-2772-4482-8ad8-cfd70fd17728" />
+        <classShapeMoniker Id="3e358a4d-47ad-4235-80eb-7582c66698b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.21242390950521); (3.5 : 2.21242390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/ValidateFileField/ValidateFileField_ResourceRequirement" />
+      <nodes>
+        <classShapeMoniker Id="615afdc8-1ad3-4cd5-ad3d-fbb800422c32" />
+        <classShapeMoniker Id="a36f6222-e86b-4726-a165-a30533493c59" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.50177124023437); (7.25 : 9.50177124023437); (7.25 : 11.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/Validation/Validation_CategoryProfile" />
+      <nodes>
+        <classShapeMoniker Id="ec854c5e-d928-40c4-803e-cf5a9d93993a" />
+        <classShapeMoniker Id="0378767f-366b-4f9b-9cc1-1a0e93464dc0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="df8f03da-3c96-4fa9-8115-4fc20dcb12ef" absoluteBounds="3.5, 14.625, 2, 4.21875244140625">
+      <DataClassMoniker Name="/RMCDataContext/UserInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="092742af-4d8e-4882-b428-ada7a019acaf" absoluteBounds="3.5149999999999997, 15.085, 1.9700000000000002, 3.65875244140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 16.6606463623047); (9.25 : 16.6606463623047)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/UserInfo/UserInfo_HospitalInfo" />
+      <nodes>
+        <classShapeMoniker Id="df8f03da-3c96-4fa9-8115-4fc20dcb12ef" />
+        <classShapeMoniker Id="641fee62-129f-47e8-b3c8-2bc61c5a3ce5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 18.2968762207031); (6.25 : 18.2968762207031)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/UserInfo/UserInfo_MaintainControlState" />
+      <nodes>
+        <classShapeMoniker Id="df8f03da-3c96-4fa9-8115-4fc20dcb12ef" />
+        <classShapeMoniker Id="fb1aec8f-ee13-4a6f-8f42-da6fb06ec39b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 17.3660487874349); (8.32291666666667 : 17.3660487874349 : JumpStart); (8.48958333333333 : 17.3660487874349 : JumpEnd); (9 : 17.3660487874349); (9 : 18.8830997721354); (11.75 : 18.8830997721354); (11.75 : 17.1146264648438); (14.2916666666667 : 17.1146264648438 : JumpStart); (14.4583333333333 : 17.1146264648438 : JumpEnd); (17.5 : 17.1146264648438); (17.5 : 16.75); (18.75 : 16.75); (18.75 : 17)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/UserInfo/UserInfo_MultiUserDemographic" />
+      <nodes>
+        <classShapeMoniker Id="df8f03da-3c96-4fa9-8115-4fc20dcb12ef" />
+        <classShapeMoniker Id="4965a99c-ead5-4e15-8891-e754f435c4a8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 14.625); (4.5 : 14.15625); (12 : 14.15625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/UserInfo/UserInfo_MultiUserHospital" />
+      <nodes>
+        <classShapeMoniker Id="df8f03da-3c96-4fa9-8115-4fc20dcb12ef" />
+        <classShapeMoniker Id="2b2c8470-2d47-4774-824d-80f4299d74c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.0847987874349); (5.79166666666667 : 15.0847987874349 : JumpStart); (5.95833333333333 : 15.0847987874349 : JumpEnd); (6.25 : 15.0847987874349)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/UserInfo/UserInfo_ProfileUser" />
+      <nodes>
+        <classShapeMoniker Id="df8f03da-3c96-4fa9-8115-4fc20dcb12ef" />
+        <classShapeMoniker Id="107362cf-f810-43aa-acf5-1c5f308fc9a2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 16.5052502441406); (3.5 : 16.5052502441406)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RMCDataContext/UserType/UserType_UserInfo" />
+      <nodes>
+        <classShapeMoniker Id="56b26ebf-675a-4f8b-bc63-fe3ee9a4e1f4" />
+        <classShapeMoniker Id="df8f03da-3c96-4fa9-8115-4fc20dcb12ef" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e72f3217-e3b8-4a2e-9d81-604653a2b76d" absoluteBounds="22.25, 3.875, 2, 1.0961531575520827">
+      <DataClassMoniker Name="/RMCDataContext/ActivitiesCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="44c6ef16-c554-411c-9167-f5fef0c8a1fe" absoluteBounds="22.265, 4.335, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4511CC43-4582-46E7-80FE-9A91DA03F37E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RMC.BusinessEntities</RootNamespace>
+    <AssemblyName>RMC.BusinessEntities</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BECategoryProfile.cs" />
+    <Compile Include="BECategoryType.cs" />
+    <Compile Include="BEContactUs.cs" />
+    <Compile Include="BECountry.cs" />
+    <Compile Include="BEDataManagementFileList.cs" />
+    <Compile Include="BEHospitalInfoDynamicProp.cs" />
+    <Compile Include="BEHospitalList.cs" />
+    <Compile Include="BEHospitalUnitInfo.cs" />
+    <Compile Include="BEImportData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BELastLocation.cs" />
+    <Compile Include="BELocation.cs" />
+    <Compile Include="BEMonth.cs" />
+    <Compile Include="BEMultiUserHospital.cs" />
+    <Compile Include="BENationalDatabase.cs" />
+    <Compile Include="BENotification.cs" />
+    <Compile Include="BENursePDAFileCounter.cs" />
+    <Compile Include="BEOperator.cs" />
+    <Compile Include="BEProfileType.cs" />
+    <Compile Include="BEReports.cs" />
+    <Compile Include="BERequestForTypes.cs" />
+    <Compile Include="BESessionInfomation.cs" />
+    <Compile Include="BEUserInfomation.cs" />
+    <Compile Include="BEValidationData.cs" />
+    <Compile Include="BEViewRequest.cs" />
+    <Compile Include="BEYear.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\RMC.DataService\RMC.DataService.csproj">
+      <Project>{B3910E23-1E19-46A3-8D54-C1A83C72CD5D}</Project>
+      <Name>RMC.DataService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

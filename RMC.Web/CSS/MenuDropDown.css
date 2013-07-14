@@ -1,0 +1,57 @@
+﻿body
+{
+}
+
+#jsddm
+{
+    margin: 0;
+    padding: 0;
+}
+#jsddm li
+{
+    float: left;
+    list-style: none;
+    font: 9px Tahoma, Arial;
+}
+#jsddm li a
+{
+    display: block;
+    color: #EAFFED;
+    white-space: nowrap;
+    font: 11px Tahoma, Arial;
+}
+#jsddm li a:hover
+{
+    font-weight: bold;
+}
+#jsddm li ul
+{
+    z-index:99;
+    margin: 0;
+    width: 240px;
+    padding-left: 40px;
+    position: absolute;
+    visibility: hidden;
+    font-weight: bold;
+}
+#jsddm li ul li
+{
+    z-index:99;
+    float: none;
+    display: inline;
+    font-weight: bold;
+}
+#jsddm li ul li a
+{
+    z-index:99;
+    width: auto;
+    background: #6d0212;
+    font-weight: bold;
+    font: 11px Tahoma, Arial;
+}
+#jsddm li ul li a:hover
+{
+    z-index:99;
+    color: Yellow;
+    font-weight: bold;
+}

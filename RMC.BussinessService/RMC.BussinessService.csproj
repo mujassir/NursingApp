@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{459CCB2C-AE51-4C05-9180-49872470DCE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RMC.BussinessService</RootNamespace>
+    <AssemblyName>RMC.BussinessService</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel">
+      <HintPath>C:\Users\chanderm\Desktop\bin\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <HintPath>C:\Users\chanderm\Desktop\Interop.Microsoft.Office.Core.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <HintPath>C:\Users\chanderm\Desktop\bin\Interop.VBIDE.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DataVisualization">
+      <HintPath>C:\Users\davinderk\Desktop\System.Web.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization.Design">
+      <HintPath>C:\Users\davinderk\Desktop\System.Web.DataVisualization.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XLExport">
+      <HintPath>C:\Users\chanderm\Desktop\bin\XLExport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BSActivity.cs" />
+    <Compile Include="BSCategoryProfiles.cs" />
+    <Compile Include="BSChartControl.cs" />
+    <Compile Include="BSCommon.cs" />
+    <Compile Include="BSContactUs.cs" />
+    <Compile Include="BSCustomizedPaging.cs" />
+    <Compile Include="BSDataImportConfigLocation.cs" />
+    <Compile Include="BSDataManagement.cs" />
+    <Compile Include="BSDataValidation.cs" />
+    <Compile Include="BSEmail.cs" />
+    <Compile Include="BSEmailNotificationBody.cs" />
+    <Compile Include="BSHospitalDemographicDetail.cs" />
+    <Compile Include="BSHospitalInfo.cs" />
+    <Compile Include="BSHospitalType.cs" />
+    <Compile Include="BSImportXMLExcelFile.cs" />
+    <Compile Include="BSLocation.cs" />
+    <Compile Include="BSLogin.cs">
+    </Compile>
+    <Compile Include="BSMaintainControlState.cs" />
+    <Compile Include="BSMonth.cs" />
+    <Compile Include="BSMultiUserDemographic.cs" />
+    <Compile Include="BSMultiUserHospital.cs" />
+    <Compile Include="BSNationalDatabase.cs" />
+    <Compile Include="BSNewsLetter.cs" />
+    <Compile Include="BSNursePDADetail.cs" />
+    <Compile Include="BSOwnership.cs" />
+    <Compile Include="BSPermission.cs" />
+    <Compile Include="BSPharmacyType.cs" />
+    <Compile Include="BSProfileType.cs" />
+    <Compile Include="BSProfileUser.cs" />
+    <Compile Include="BSReply.cs" />
+    <Compile Include="BSReplyMessage.cs" />
+    <Compile Include="BSReports.cs" />
+    <Compile Include="BSRequestForTypes.cs" />
+    <Compile Include="BSSDAValidation.cs" />
+    <Compile Include="BSSerialization.cs" />
+    <Compile Include="BSSubActivity.cs" />
+    <Compile Include="BSTreeView.cs" />
+    <Compile Include="BSUnitType.cs" />
+    <Compile Include="BSUpload.cs" />
+    <Compile Include="BSUsers.cs" />
+    <Compile Include="BSUserType.cs" />
+    <Compile Include="BSUtility.cs" />
+    <Compile Include="BSValidationData.cs" />
+    <Compile Include="BSViewRequest.cs" />
+    <Compile Include="BSYear.cs" />
+    <Compile Include="BSImportData.cs" />
+    <Compile Include="MaintainSessions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Security.cs">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\RMC.BusinessEntities\RMC.BusinessEntities.csproj">
+      <Project>{4511CC43-4582-46E7-80FE-9A91DA03F37E}</Project>
+      <Name>RMC.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMC.DataService\RMC.DataService.csproj">
+      <Project>{B3910E23-1E19-46A3-8D54-C1A83C72CD5D}</Project>
+      <Name>RMC.DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMC.LogExceptions\RMC.LogExceptions.csproj">
+      <Project>{E629C66C-233D-455F-96B3-6DDDAEA99A5B}</Project>
+      <Name>RMC.LogExceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

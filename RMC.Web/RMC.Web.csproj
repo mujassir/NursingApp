@@ -1,0 +1,2145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F7538D4C-075E-4994-B48E-C4EAEF92AC33}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RMC.Web</RootNamespace>
+    <AssemblyName>RMC.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <DeployIisAppPath>Default Web Site/RMC.Web_deploy</DeployIisAppPath>
+    <DesktopBuildPackageLocation>..\DeploymentPackage\RMC.Web.zip</DesktopBuildPackageLocation>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <PublishDatabases>true</PublishDatabases>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20351, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="LogExceptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ProjectDocs\RMC\BackUP\RMC Nov 30 2009\RMC.Web\bin\LogExceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.2669.21785, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Backup\RMC 18 Dec 2009\RMC.Web\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Backup\RMC 18 Dec 2009\RMC.Web\bin\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Backup\RMC 18 Dec 2009\RMC.Web\bin\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MSCaptcha, Version=1.0.2832.11804, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\MSCaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.DynamicData\3.5.0.0__31bf3856ad364e35\System.Web.DynamicData.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="XLExport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\XLExport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\ReportTimeRNChartsPie12.aspx" />
+    <Content Include="Administrator\testpage.aspx" />
+    <Content Include="Administrator\ValidationData.aspx" />
+    <Content Include="Administrator\Utility.aspx" />
+    <Content Include="bin\Interop.Excel.dll" />
+    <Content Include="bin\Interop.VBIDE.dll" />
+    <Content Include="bin\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\XLExport.dll" />
+    <Content Include="ChartImg1.png" />
+    <Content Include="Excel\ChartImg1.png" />
+    <Content Include="Common\UserAssessment.aspx" />
+    <Content Include="Common\ReportUnitAssessment.aspx" />
+    <Content Include="Common\Excel\ChartImg1.png" />
+    <Content Include="jquery\jquery-1.3.2.js" />
+    <Content Include="jquery\jquery-1.7.min.js" />
+    <Content Include="jquery\jquery.lightbox.js" />
+    <Content Include="jquery\jquery.lightbox.min.js" />
+    <Content Include="jquery\jquery.popupWindow.js" />
+    <Content Include="Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\ActivateUser.aspx.cs">
+      <DependentUpon>ActivateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ActivateUser.aspx.designer.cs">
+      <DependentUpon>ActivateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AddUpdateConfig.aspx.cs">
+      <DependentUpon>AddUpdateConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AddUpdateConfig.aspx.designer.cs">
+      <DependentUpon>AddUpdateConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AdminHomePage.aspx.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AdminHomePage.aspx.designer.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AdminUnitType.aspx.cs">
+      <DependentUpon>AdminUnitType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AdminUnitType.aspx.designer.cs">
+      <DependentUpon>AdminUnitType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AjaxClassicCallBack.aspx.cs">
+      <DependentUpon>AjaxClassicCallBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AjaxClassicCallBack.aspx.designer.cs">
+      <DependentUpon>AjaxClassicCallBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CategoryProfiles.aspx.cs">
+      <DependentUpon>CategoryProfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CategoryProfiles.aspx.designer.cs">
+      <DependentUpon>CategoryProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CreateNewProfile.aspx.cs">
+      <DependentUpon>CreateNewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CreateNewProfile.aspx.designer.cs">
+      <DependentUpon>CreateNewProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DataManagement.aspx.cs">
+      <DependentUpon>DataManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DataManagement.aspx.designer.cs">
+      <DependentUpon>DataManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DataManagementFileList.aspx.cs">
+      <DependentUpon>DataManagementFileList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DataManagementFileList.aspx.designer.cs">
+      <DependentUpon>DataManagementFileList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DataManagementMonth.aspx.cs">
+      <DependentUpon>DataManagementMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DataManagementMonth.aspx.designer.cs">
+      <DependentUpon>DataManagementMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DataManagementUnit.aspx.cs">
+      <DependentUpon>DataManagementUnit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DataManagementUnit.aspx.designer.cs">
+      <DependentUpon>DataManagementUnit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DataManagementYear.aspx.cs">
+      <DependentUpon>DataManagementYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DataManagementYear.aspx.designer.cs">
+      <DependentUpon>DataManagementYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DeleteAll.aspx.cs">
+      <DependentUpon>DeleteAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DeleteAll.aspx.designer.cs">
+      <DependentUpon>DeleteAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DeleteCategoryProfile.aspx.cs">
+      <DependentUpon>DeleteCategoryProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DeleteCategoryProfile.aspx.designer.cs">
+      <DependentUpon>DeleteCategoryProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DeleteNursePDAInfo.aspx.cs">
+      <DependentUpon>DeleteNursePDAInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DeleteNursePDAInfo.aspx.designer.cs">
+      <DependentUpon>DeleteNursePDAInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ExportExcelFile.aspx.cs">
+      <DependentUpon>ExportExcelFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ExportExcelFile.aspx.designer.cs">
+      <DependentUpon>ExportExcelFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\FileUploader.aspx.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\FileUploader.aspx.designer.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\FiltersList.aspx.cs">
+      <DependentUpon>FiltersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\FiltersList.aspx.designer.cs">
+      <DependentUpon>FiltersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\GetUserList.aspx.cs">
+      <DependentUpon>GetUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\GetUserList.aspx.designer.cs">
+      <DependentUpon>GetUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\HospitalDemographicDetail.aspx.cs">
+      <DependentUpon>HospitalDemographicDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\HospitalDemographicDetail.aspx.designer.cs">
+      <DependentUpon>HospitalDemographicDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\HospitalRegistration.aspx.cs">
+      <DependentUpon>HospitalRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\HospitalRegistration.aspx.designer.cs">
+      <DependentUpon>HospitalRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\HospitalType.aspx.cs">
+      <DependentUpon>HospitalType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\HospitalType.aspx.designer.cs">
+      <DependentUpon>HospitalType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\HospitalUnitInfomation.aspx.cs">
+      <DependentUpon>HospitalUnitInfomation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\HospitalUnitInfomation.aspx.designer.cs">
+      <DependentUpon>HospitalUnitInfomation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ImportExcelSheet.aspx.cs">
+      <DependentUpon>ImportExcelSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ImportExcelSheet.aspx.designer.cs">
+      <DependentUpon>ImportExcelSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ManageHospitalUnits.aspx.cs">
+      <DependentUpon>ManageHospitalUnits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ManageHospitalUnits.aspx.designer.cs">
+      <DependentUpon>ManageHospitalUnits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ManageMonth.aspx.cs">
+      <DependentUpon>ManageMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ManageMonth.aspx.designer.cs">
+      <DependentUpon>ManageMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ManageYears.aspx.cs">
+      <DependentUpon>ManageYears.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ManageYears.aspx.designer.cs">
+      <DependentUpon>ManageYears.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MasterPageValidData.Master.cs">
+      <DependentUpon>MasterPageValidData.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\MasterPageValidData.Master.designer.cs">
+      <DependentUpon>MasterPageValidData.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MonthDetail.aspx.cs">
+      <DependentUpon>MonthDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\MonthDetail.aspx.designer.cs">
+      <DependentUpon>MonthDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MonthlyErrorReport.aspx.cs">
+      <DependentUpon>MonthlyErrorReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\MonthlyErrorReport.aspx.designer.cs">
+      <DependentUpon>MonthlyErrorReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\NonValidateData.aspx.cs">
+      <DependentUpon>NonValidateData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\NonValidateData.aspx.designer.cs">
+      <DependentUpon>NonValidateData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\NonValidData.aspx.cs">
+      <DependentUpon>NonValidData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\NonValidData.aspx.designer.cs">
+      <DependentUpon>NonValidData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\OwnershipType.aspx.cs">
+      <DependentUpon>OwnershipType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\OwnershipType.aspx.designer.cs">
+      <DependentUpon>OwnershipType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\PharmacyType.aspx.cs">
+      <DependentUpon>PharmacyType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\PharmacyType.aspx.designer.cs">
+      <DependentUpon>PharmacyType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\PopupMasterPage.Master.cs">
+      <DependentUpon>PopupMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\PopupMasterPage.Master.designer.cs">
+      <DependentUpon>PopupMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ProfileType.aspx.cs">
+      <DependentUpon>ProfileType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ProfileType.aspx.designer.cs">
+      <DependentUpon>ProfileType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\HospitalBenchmark.aspx.cs">
+      <DependentUpon>HospitalBenchmark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\HospitalBenchmark.aspx.designer.cs">
+      <DependentUpon>HospitalBenchmark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\LocationProfile.aspx.cs">
+      <DependentUpon>LocationProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\LocationProfile.aspx.designer.cs">
+      <DependentUpon>LocationProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ReportPopupMasterPage.Master.cs">
+      <DependentUpon>ReportPopupMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ReportPopupMasterPage.Master.designer.cs">
+      <DependentUpon>ReportPopupMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ReportTimeRNChartsPie.aspx.cs">
+      <DependentUpon>ReportTimeRNChartsPie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ReportTimeRNChartsPie12.aspx.cs">
+      <DependentUpon>ReportTimeRNChartsPie12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\RequestApproval.aspx.cs">
+      <DependentUpon>RequestApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\RequestApproval.aspx.designer.cs">
+      <DependentUpon>RequestApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RequestApprovalForHospital.aspx.cs">
+      <DependentUpon>RequestApprovalForHospital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\RequestApprovalForHospital.aspx.designer.cs">
+      <DependentUpon>RequestApprovalForHospital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SaveImageAtClientSide.aspx.cs">
+      <DependentUpon>SaveImageAtClientSide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SaveImageAtClientSide.aspx.designer.cs">
+      <DependentUpon>SaveImageAtClientSide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SendMessage.aspx.designer.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SendNotification.aspx.cs">
+      <DependentUpon>SendNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SendNotification.aspx.designer.cs">
+      <DependentUpon>SendNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SendUserNotification.aspx.cs">
+      <DependentUpon>SendUserNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SendUserNotification.aspx.designer.cs">
+      <DependentUpon>SendUserNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ShowValidData.aspx.cs">
+      <DependentUpon>ShowValidData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ShowValidData.aspx.designer.cs">
+      <DependentUpon>ShowValidData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\StandardFormat.aspx.cs">
+      <DependentUpon>StandardFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\StandardFormat.aspx.designer.cs">
+      <DependentUpon>StandardFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Type.aspx.cs">
+      <DependentUpon>Type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Type.aspx.designer.cs">
+      <DependentUpon>Type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ValidationTable.aspx.cs">
+      <DependentUpon>ValidationTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ValidationTable.aspx.designer.cs">
+      <DependentUpon>ValidationTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ViewBenchmarkingFilters.aspx.cs">
+      <DependentUpon>ViewBenchmarkingFilters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ViewBenchmarkingFilters.aspx.designer.cs">
+      <DependentUpon>ViewBenchmarkingFilters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ViewProfileDetail.aspx.cs">
+      <DependentUpon>ViewProfileDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ViewProfileDetail.aspx.designer.cs">
+      <DependentUpon>ViewProfileDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ViewUsersByUnits.aspx.cs">
+      <DependentUpon>ViewUsersByUnits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ViewUsersByUnits.aspx.designer.cs">
+      <DependentUpon>ViewUsersByUnits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ViewUsersByHospitals.aspx.cs">
+      <DependentUpon>ViewUsersByHospitals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ViewUsersByHospitals.aspx.designer.cs">
+      <DependentUpon>ViewUsersByHospitals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\DeleteHospital.aspx.cs">
+      <DependentUpon>DeleteHospital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\DeleteHospital.aspx.designer.cs">
+      <DependentUpon>DeleteHospital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\TimeRN.aspx.cs">
+      <DependentUpon>TimeRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\TimeRN.aspx.designer.cs">
+      <DependentUpon>TimeRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ReportTimeRNCharts.aspx.cs">
+      <DependentUpon>ReportTimeRNCharts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ReportTimeRNCharts.aspx.designer.cs">
+      <DependentUpon>ReportTimeRNCharts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\NationalDatabase.aspx.cs">
+      <DependentUpon>NationalDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\NationalDatabase.aspx.designer.cs">
+      <DependentUpon>NationalDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BenchmarkingFilters.aspx.cs">
+      <DependentUpon>BenchmarkingFilters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BenchmarkingFilters.aspx.designer.cs">
+      <DependentUpon>BenchmarkingFilters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ControlCharts.aspx.cs">
+      <DependentUpon>ControlCharts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ControlCharts.aspx.designer.cs">
+      <DependentUpon>ControlCharts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\StandardizeLocationName.aspx.cs">
+      <DependentUpon>StandardizeLocationName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\StandardizeLocationName.aspx.designer.cs">
+      <DependentUpon>StandardizeLocationName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ReportHospitalBenchmarkGrid.aspx.cs">
+      <DependentUpon>ReportHospitalBenchmarkGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ReportHospitalBenchmarkGrid.aspx.designer.cs">
+      <DependentUpon>ReportHospitalBenchmarkGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ReportTimeRNGrid.aspx.cs">
+      <DependentUpon>ReportTimeRNGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ReportTimeRNGrid.aspx.designer.cs">
+      <DependentUpon>ReportTimeRNGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ReportLocationProfileGrid.aspx.cs">
+      <DependentUpon>ReportLocationProfileGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ReportLocationProfileGrid.aspx.designer.cs">
+      <DependentUpon>ReportLocationProfileGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ShowSpecialTypeData.aspx.cs">
+      <DependentUpon>ShowSpecialTypeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ShowSpecialTypeData.aspx.designer.cs">
+      <DependentUpon>ShowSpecialTypeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\testpage.aspx.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\testpage.aspx.designer.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ValidationData.aspx.cs">
+      <DependentUpon>ValidationData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ValidationData.aspx.designer.cs">
+      <DependentUpon>ValidationData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Utility.aspx.cs">
+      <DependentUpon>Utility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Utility.aspx.designer.cs">
+      <DependentUpon>Utility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartControl.cs" />
+    <Compile Include="Common\UserAssessment.aspx.cs">
+      <DependentUpon>UserAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UserAssessment.aspx.designer.cs">
+      <DependentUpon>UserAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\CommonClass.cs" />
+    <Compile Include="Administrator\EditHospitalInfomation.aspx.cs">
+      <DependentUpon>EditHospitalInfomation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\EditHospitalInfomation.aspx.designer.cs">
+      <DependentUpon>EditHospitalInfomation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\HospitalDetail.aspx.cs">
+      <DependentUpon>HospitalDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\HospitalDetail.aspx.designer.cs">
+      <DependentUpon>HospitalDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\HospitalList.aspx.cs">
+      <DependentUpon>HospitalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\HospitalList.aspx.designer.cs">
+      <DependentUpon>HospitalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ManageHospitals.aspx.cs">
+      <DependentUpon>ManageHospitals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ManageHospitals.aspx.designer.cs">
+      <DependentUpon>ManageHospitals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReportUnitAssessment.aspx.cs">
+      <DependentUpon>ReportUnitAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ReportUnitAssessment.aspx.designer.cs">
+      <DependentUpon>ReportUnitAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dv.aspx.cs">
+      <DependentUpon>dv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dv.aspx.designer.cs">
+      <DependentUpon>dv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ActivateUser.ascx.cs">
+      <DependentUpon>ActivateUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActivateUser.ascx.designer.cs">
+      <DependentUpon>ActivateUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ActivationOfUsers.ascx.cs">
+      <DependentUpon>ActivationOfUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActivationOfUsers.ascx.designer.cs">
+      <DependentUpon>ActivationOfUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AddOrUpdateConfiguration.ascx.cs">
+      <DependentUpon>AddOrUpdateConfiguration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AddOrUpdateConfiguration.ascx.designer.cs">
+      <DependentUpon>AddOrUpdateConfiguration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BenchmarkingFilters.ascx.cs">
+      <DependentUpon>BenchmarkingFilters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\BenchmarkingFilters.ascx.designer.cs">
+      <DependentUpon>BenchmarkingFilters.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ChangePassword.ascx.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ChangePassword.ascx.designer.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ContactUs.ascx.cs">
+      <DependentUpon>ContactUs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactUs.ascx.designer.cs">
+      <DependentUpon>ContactUs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ContactUsNotification.ascx.cs">
+      <DependentUpon>ContactUsNotification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactUsNotification.ascx.designer.cs">
+      <DependentUpon>ContactUsNotification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ControlCharts.ascx.cs">
+      <DependentUpon>ControlCharts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ControlCharts.ascx.designer.cs">
+      <DependentUpon>ControlCharts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CopyProfileFromTemplate.ascx.cs">
+      <DependentUpon>CopyProfileFromTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CopyProfileFromTemplate.ascx.designer.cs">
+      <DependentUpon>CopyProfileFromTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CreateNewProfile.ascx.cs">
+      <DependentUpon>CreateNewProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CreateNewProfile.ascx.designer.cs">
+      <DependentUpon>CreateNewProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataManagement.ascx.cs">
+      <DependentUpon>DataManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataManagement.ascx.designer.cs">
+      <DependentUpon>DataManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataManagementFileList.ascx.cs">
+      <DependentUpon>DataManagementFileList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataManagementFileList.ascx.designer.cs">
+      <DependentUpon>DataManagementFileList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataManagementHospitalUnit.ascx.cs">
+      <DependentUpon>DataManagementHospitalUnit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataManagementHospitalUnit.ascx.designer.cs">
+      <DependentUpon>DataManagementHospitalUnit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataManagementMonth.ascx.cs">
+      <DependentUpon>DataManagementMonth.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataManagementMonth.ascx.designer.cs">
+      <DependentUpon>DataManagementMonth.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataManamentYear.ascx.cs">
+      <DependentUpon>DataManamentYear.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataManamentYear.ascx.designer.cs">
+      <DependentUpon>DataManamentYear.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataValidation.ascx.cs">
+      <DependentUpon>DataValidation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataValidation.ascx.designer.cs">
+      <DependentUpon>DataValidation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DeleteAll.ascx.cs">
+      <DependentUpon>DeleteAll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DeleteAll.ascx.designer.cs">
+      <DependentUpon>DeleteAll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DeleteCategoryProfile.ascx.cs">
+      <DependentUpon>DeleteCategoryProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DeleteCategoryProfile.ascx.designer.cs">
+      <DependentUpon>DeleteCategoryProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DeleteHospital.ascx.cs">
+      <DependentUpon>DeleteHospital.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DeleteHospital.ascx.designer.cs">
+      <DependentUpon>DeleteHospital.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DeleteNursePDAInfo.ascx.cs">
+      <DependentUpon>DeleteNursePDAInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DeleteNursePDAInfo.ascx.designer.cs">
+      <DependentUpon>DeleteNursePDAInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DeleteProfile.ascx.cs">
+      <DependentUpon>DeleteProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DeleteProfile.ascx.designer.cs">
+      <DependentUpon>DeleteProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FileUploader.ascx.cs">
+      <DependentUpon>FileUploader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\FileUploader.ascx.designer.cs">
+      <DependentUpon>FileUploader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FiltersList.ascx.cs">
+      <DependentUpon>FiltersList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\FiltersList.ascx.designer.cs">
+      <DependentUpon>FiltersList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GetUsers.ascx.cs">
+      <DependentUpon>GetUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GetUsers.ascx.designer.cs">
+      <DependentUpon>GetUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HospitalDemographicInfo.ascx.cs">
+      <DependentUpon>HospitalDemographicInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HospitalDemographicInfo.ascx.designer.cs">
+      <DependentUpon>HospitalDemographicInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HospitalEditRegistration.ascx.cs">
+      <DependentUpon>HospitalEditRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HospitalEditRegistration.ascx.designer.cs">
+      <DependentUpon>HospitalEditRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HospitalInfo.ascx.cs">
+      <DependentUpon>HospitalInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HospitalInfo.ascx.designer.cs">
+      <DependentUpon>HospitalInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HospitalRegistration.ascx.cs">
+      <DependentUpon>HospitalRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HospitalRegistration.ascx.designer.cs">
+      <DependentUpon>HospitalRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HospitalType.ascx.cs">
+      <DependentUpon>HospitalType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HospitalType.ascx.designer.cs">
+      <DependentUpon>HospitalType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HospitalUnitInformation.ascx.cs">
+      <DependentUpon>HospitalUnitInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HospitalUnitInformation.ascx.designer.cs">
+      <DependentUpon>HospitalUnitInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ImportExcelSheet.ascx.cs">
+      <DependentUpon>ImportExcelSheet.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ImportExcelSheet.ascx.designer.cs">
+      <DependentUpon>ImportExcelSheet.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManageMonth.ascx.cs">
+      <DependentUpon>ManageMonth.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManageMonth.ascx.designer.cs">
+      <DependentUpon>ManageMonth.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManageYears.ascx.cs">
+      <DependentUpon>ManageYears.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManageYears.ascx.designer.cs">
+      <DependentUpon>ManageYears.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NationalDatabase.ascx.cs">
+      <DependentUpon>NationalDatabase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NationalDatabase.ascx.designer.cs">
+      <DependentUpon>NationalDatabase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewsLetter.ascx.cs">
+      <DependentUpon>NewsLetter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewsLetter.ascx.designer.cs">
+      <DependentUpon>NewsLetter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NonValidatedData.ascx.cs">
+      <DependentUpon>NonValidatedData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NonValidatedData.ascx.designer.cs">
+      <DependentUpon>NonValidatedData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OwnerShipType.ascx.cs">
+      <DependentUpon>OwnerShipType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\OwnerShipType.ascx.designer.cs">
+      <DependentUpon>OwnerShipType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PharmacyType.ascx.cs">
+      <DependentUpon>PharmacyType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PharmacyType.ascx.designer.cs">
+      <DependentUpon>PharmacyType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProfileDetail.ascx.cs">
+      <DependentUpon>ProfileDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProfileDetail.ascx.designer.cs">
+      <DependentUpon>ProfileDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProfileTreeView.ascx.cs">
+      <DependentUpon>ProfileTreeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProfileTreeView.ascx.designer.cs">
+      <DependentUpon>ProfileTreeView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProfileType.ascx.cs">
+      <DependentUpon>ProfileType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProfileType.ascx.designer.cs">
+      <DependentUpon>ProfileType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HospitalBenchmark.ascx.cs">
+      <DependentUpon>HospitalBenchmark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HospitalBenchmark.ascx.designer.cs">
+      <DependentUpon>HospitalBenchmark.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LocationProfile.ascx.cs">
+      <DependentUpon>LocationProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LocationProfile.ascx.designer.cs">
+      <DependentUpon>LocationProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportHospitalBenchmark.ascx.cs">
+      <DependentUpon>ReportHospitalBenchmark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportHospitalBenchmarkGrid.ascx.cs">
+      <DependentUpon>ReportHospitalBenchmarkGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportHospitalBenchmarkGrid.ascx.designer.cs">
+      <DependentUpon>ReportHospitalBenchmarkGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportLocationProfileGrid.ascx.cs">
+      <DependentUpon>ReportLocationProfileGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportLocationProfileGrid.ascx.designer.cs">
+      <DependentUpon>ReportLocationProfileGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportTimeRNCharts.ascx.cs">
+      <DependentUpon>ReportTimeRNCharts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportTimeRNCharts.ascx.designer.cs">
+      <DependentUpon>ReportTimeRNCharts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportTimeRNGrid.ascx.cs">
+      <DependentUpon>ReportTimeRNGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportTimeRNGrid.ascx.designer.cs">
+      <DependentUpon>ReportTimeRNGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RequestApproval.ascx.cs">
+      <DependentUpon>RequestApproval.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RequestApproval.ascx.designer.cs">
+      <DependentUpon>RequestApproval.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RequestApprovalForHospital.ascx.cs">
+      <DependentUpon>RequestApprovalForHospital.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RequestApprovalForHospital.ascx.designer.cs">
+      <DependentUpon>RequestApprovalForHospital.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RequestApprovalNotification.ascx.cs">
+      <DependentUpon>RequestApprovalNotification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RequestApprovalNotification.ascx.designer.cs">
+      <DependentUpon>RequestApprovalNotification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RequestForTypes.ascx.cs">
+      <DependentUpon>RequestForTypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RequestForTypes.ascx.designer.cs">
+      <DependentUpon>RequestForTypes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RequestList.ascx.cs">
+      <DependentUpon>RequestList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RequestList.ascx.designer.cs">
+      <DependentUpon>RequestList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SaveChartImage.ascx.cs">
+      <DependentUpon>SaveChartImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SaveChartImage.ascx.designer.cs">
+      <DependentUpon>SaveChartImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SendMessage.ascx.cs">
+      <DependentUpon>SendMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SendMessage.ascx.designer.cs">
+      <DependentUpon>SendMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SendNotificationForUsers.ascx.cs">
+      <DependentUpon>SendNotificationForUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SendNotificationForUsers.ascx.designer.cs">
+      <DependentUpon>SendNotificationForUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShowSpecialTypeData.ascx.cs">
+      <DependentUpon>ShowSpecialTypeData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShowSpecialTypeData.ascx.designer.cs">
+      <DependentUpon>ShowSpecialTypeData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShowValidData.ascx.cs">
+      <DependentUpon>ShowValidData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShowValidData.ascx.designer.cs">
+      <DependentUpon>ShowValidData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StandardizeLocationName.ascx.cs">
+      <DependentUpon>StandardizeLocationName.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\StandardizeLocationName.ascx.designer.cs">
+      <DependentUpon>StandardizeLocationName.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TimeRN.ascx.cs">
+      <DependentUpon>TimeRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\TimeRN.ascx.designer.cs">
+      <DependentUpon>TimeRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAdminTreeView.ascx.cs">
+      <DependentUpon>ucAdminTreeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAdminTreeView.ascx.designer.cs">
+      <DependentUpon>ucAdminTreeView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDemographicMembersTreeView.ascx.cs">
+      <DependentUpon>ucDemographicMembersTreeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDemographicMembersTreeView.ascx.designer.cs">
+      <DependentUpon>ucDemographicMembersTreeView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMembersTreeView.ascx.cs">
+      <DependentUpon>ucMembersTreeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMembersTreeView.ascx.designer.cs">
+      <DependentUpon>ucMembersTreeView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UnitAssessmentReport.ascx.cs">
+      <DependentUpon>UnitAssessmentReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UnitAssessmentReport.ascx.designer.cs">
+      <DependentUpon>UnitAssessmentReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UnitType.ascx.cs">
+      <DependentUpon>UnitType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UnitType.ascx.designer.cs">
+      <DependentUpon>UnitType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserAssessmentReport.ascx.cs">
+      <DependentUpon>UserAssessmentReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserAssessmentReport.ascx.designer.cs">
+      <DependentUpon>UserAssessmentReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserNotification.ascx.cs">
+      <DependentUpon>UserNotification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserNotification.ascx.designer.cs">
+      <DependentUpon>UserNotification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserProfile.ascx.cs">
+      <DependentUpon>UserProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserProfile.ascx.designer.cs">
+      <DependentUpon>UserProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UserRegistration.ascx.cs">
+      <DependentUpon>UserRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserRegistration.ascx.designer.cs">
+      <DependentUpon>UserRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation.ascx.cs">
+      <DependentUpon>Validation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation.ascx.designer.cs">
+      <DependentUpon>Validation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ValidationData.ascx.cs">
+      <DependentUpon>ValidationData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ValidationData.ascx.designer.cs">
+      <DependentUpon>ValidationData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ViewBenchmarkingFilters.ascx.cs">
+      <DependentUpon>ViewBenchmarkingFilters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ViewBenchmarkingFilters.ascx.designer.cs">
+      <DependentUpon>ViewBenchmarkingFilters.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ViewNonValid.ascx.cs">
+      <DependentUpon>ViewNonValid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ViewNonValid.ascx.designer.cs">
+      <DependentUpon>ViewNonValid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ViewNonValidForNurse.ascx.cs">
+      <DependentUpon>ViewNonValidForNurse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ViewNonValidForNurse.ascx.designer.cs">
+      <DependentUpon>ViewNonValidForNurse.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportTimeRNChartsPie.ascx.cs">
+      <DependentUpon>ReportTimeRNChartsPie.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportTimeRNChartsPie.ascx.designer.cs">
+      <DependentUpon>ReportTimeRNChartsPie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WebUserControl3.ascx.cs">
+      <DependentUpon>WebUserControl3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebUserControl3.ascx.designer.cs">
+      <DependentUpon>WebUserControl3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\AjaxClassicCallBack.aspx.cs">
+      <DependentUpon>AjaxClassicCallBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\AjaxClassicCallBack.aspx.designer.cs">
+      <DependentUpon>AjaxClassicCallBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\CategoryProfiles.aspx.cs">
+      <DependentUpon>CategoryProfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\CategoryProfiles.aspx.designer.cs">
+      <DependentUpon>CategoryProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CopyProfileFromTemplate.aspx.cs">
+      <DependentUpon>CopyProfileFromTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CopyProfileFromTemplate.aspx.designer.cs">
+      <DependentUpon>CopyProfileFromTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\CreateNewProfile.aspx.cs">
+      <DependentUpon>CreateNewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\CreateNewProfile.aspx.designer.cs">
+      <DependentUpon>CreateNewProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DataManagement.aspx.cs">
+      <DependentUpon>DataManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DataManagement.aspx.designer.cs">
+      <DependentUpon>DataManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DataManagementFileList.aspx.cs">
+      <DependentUpon>DataManagementFileList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DataManagementFileList.aspx.designer.cs">
+      <DependentUpon>DataManagementFileList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DataManagementMonth.aspx.cs">
+      <DependentUpon>DataManagementMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DataManagementMonth.aspx.designer.cs">
+      <DependentUpon>DataManagementMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DataManagementUnit.aspx.cs">
+      <DependentUpon>DataManagementUnit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DataManagementUnit.aspx.designer.cs">
+      <DependentUpon>DataManagementUnit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DataManagementYear.aspx.cs">
+      <DependentUpon>DataManagementYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DataManagementYear.aspx.designer.cs">
+      <DependentUpon>DataManagementYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DataValidation.aspx.cs">
+      <DependentUpon>DataValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DataValidation.aspx.designer.cs">
+      <DependentUpon>DataValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DeleteAll.aspx.cs">
+      <DependentUpon>DeleteAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DeleteAll.aspx.designer.cs">
+      <DependentUpon>DeleteAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DeletecategoryProfile.aspx.cs">
+      <DependentUpon>DeletecategoryProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DeletecategoryProfile.aspx.designer.cs">
+      <DependentUpon>DeletecategoryProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DeleteNursePDAInfo.aspx.cs">
+      <DependentUpon>DeleteNursePDAInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DeleteNursePDAInfo.aspx.designer.cs">
+      <DependentUpon>DeleteNursePDAInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DemographicDetail.aspx.cs">
+      <DependentUpon>DemographicDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DemographicDetail.aspx.designer.cs">
+      <DependentUpon>DemographicDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\EditOrViewDemographicDetail.aspx.cs">
+      <DependentUpon>EditOrViewDemographicDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\EditOrViewDemographicDetail.aspx.designer.cs">
+      <DependentUpon>EditOrViewDemographicDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\EditOrViewHospitalRegistration.aspx.cs">
+      <DependentUpon>EditOrViewHospitalRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\EditOrViewHospitalRegistration.aspx.designer.cs">
+      <DependentUpon>EditOrViewHospitalRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\EditUserHospitalRegis.aspx.cs">
+      <DependentUpon>EditUserHospitalRegis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\EditUserHospitalRegis.aspx.designer.cs">
+      <DependentUpon>EditUserHospitalRegis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ErrorMessage.aspx.cs">
+      <DependentUpon>ErrorMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ErrorMessage.aspx.designer.cs">
+      <DependentUpon>ErrorMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FileUploader.aspx.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\FileUploader.aspx.designer.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\HospitalDemographicDetail.aspx.cs">
+      <DependentUpon>HospitalDemographicDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\HospitalDemographicDetail.aspx.designer.cs">
+      <DependentUpon>HospitalDemographicDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\HospitalDetail.aspx.cs">
+      <DependentUpon>HospitalDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\HospitalDetail.aspx.designer.cs">
+      <DependentUpon>HospitalDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\HospitalRegistration.aspx.cs">
+      <DependentUpon>HospitalRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\HospitalRegistration.aspx.designer.cs">
+      <DependentUpon>HospitalRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\HospitalTypes.aspx.cs">
+      <DependentUpon>HospitalTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\HospitalTypes.aspx.designer.cs">
+      <DependentUpon>HospitalTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\HospitalUnitInformation.aspx.cs">
+      <DependentUpon>HospitalUnitInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\HospitalUnitInformation.aspx.designer.cs">
+      <DependentUpon>HospitalUnitInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\InActiveUser.aspx.cs">
+      <DependentUpon>InActiveUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\InActiveUser.aspx.designer.cs">
+      <DependentUpon>InActiveUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\LocationProfile.aspx.cs">
+      <DependentUpon>LocationProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\LocationProfile.aspx.designer.cs">
+      <DependentUpon>LocationProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ManageMonth.aspx.cs">
+      <DependentUpon>ManageMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ManageMonth.aspx.designer.cs">
+      <DependentUpon>ManageMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ManageYears.aspx.cs">
+      <DependentUpon>ManageYears.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ManageYears.aspx.designer.cs">
+      <DependentUpon>ManageYears.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\MasterPageValidData.Master.cs">
+      <DependentUpon>MasterPageValidData.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\MasterPageValidData.Master.designer.cs">
+      <DependentUpon>MasterPageValidData.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Users\NonValidData.aspx.cs">
+      <DependentUpon>NonValidData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\NonValidData.aspx.designer.cs">
+      <DependentUpon>NonValidData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Notification.aspx.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Notification.aspx.designer.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\OwnershipType.aspx.cs">
+      <DependentUpon>OwnershipType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\OwnershipType.aspx.designer.cs">
+      <DependentUpon>OwnershipType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\PharmacyType.aspx.cs">
+      <DependentUpon>PharmacyType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\PharmacyType.aspx.designer.cs">
+      <DependentUpon>PharmacyType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\PopupMasterPage.Master.cs">
+      <DependentUpon>PopupMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\PopupMasterPage.Master.designer.cs">
+      <DependentUpon>PopupMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ReportLocationProfileGrid.aspx.cs">
+      <DependentUpon>ReportLocationProfileGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ReportLocationProfileGrid.aspx.designer.cs">
+      <DependentUpon>ReportLocationProfileGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ReportPopupMasterPage.Master.cs">
+      <DependentUpon>ReportPopupMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ReportPopupMasterPage.Master.designer.cs">
+      <DependentUpon>ReportPopupMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ReportTimeRNGrid.aspx.cs">
+      <DependentUpon>ReportTimeRNGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ReportTimeRNGrid.aspx.designer.cs">
+      <DependentUpon>ReportTimeRNGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\RequestApproval.aspx.cs">
+      <DependentUpon>RequestApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\RequestApproval.aspx.designer.cs">
+      <DependentUpon>RequestApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\RequestApprovalForHospital.aspx.cs">
+      <DependentUpon>RequestApprovalForHospital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\RequestApprovalForHospital.aspx.designer.cs">
+      <DependentUpon>RequestApprovalForHospital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\RequestForTypes.aspx.cs">
+      <DependentUpon>RequestForTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\RequestForTypes.aspx.designer.cs">
+      <DependentUpon>RequestForTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\SaveImageAtClientSide.aspx.cs">
+      <DependentUpon>SaveImageAtClientSide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\SaveImageAtClientSide.aspx.designer.cs">
+      <DependentUpon>SaveImageAtClientSide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\SendMessage.aspx.designer.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\SendRequest.aspx.cs">
+      <DependentUpon>SendRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\SendRequest.aspx.designer.cs">
+      <DependentUpon>SendRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\SendUserNotification.aspx.cs">
+      <DependentUpon>SendUserNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\SendUserNotification.aspx.designer.cs">
+      <DependentUpon>SendUserNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ShowValidData.aspx.cs">
+      <DependentUpon>ShowValidData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ShowValidData.aspx.designer.cs">
+      <DependentUpon>ShowValidData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\StandardFormat.aspx.cs">
+      <DependentUpon>StandardFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\StandardFormat.aspx.designer.cs">
+      <DependentUpon>StandardFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UnitType.aspx.cs">
+      <DependentUpon>UnitType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\UnitType.aspx.designer.cs">
+      <DependentUpon>UnitType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UploadSpreadSheet.aspx.cs">
+      <DependentUpon>UploadSpreadSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\UploadSpreadSheet.aspx.designer.cs">
+      <DependentUpon>UploadSpreadSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserGridView.Master.cs">
+      <DependentUpon>UserGridView.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\UserGridView.Master.designer.cs">
+      <DependentUpon>UserGridView.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserHomePage.aspx.cs">
+      <DependentUpon>UserHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\UserHomePage.aspx.designer.cs">
+      <DependentUpon>UserHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserMasterPage.Master.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\UserMasterPage.Master.designer.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ValidateData.aspx.cs">
+      <DependentUpon>ValidateData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ValidateData.aspx.designer.cs">
+      <DependentUpon>ValidateData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ViewProfileDetail.aspx.cs">
+      <DependentUpon>ViewProfileDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ViewProfileDetail.aspx.designer.cs">
+      <DependentUpon>ViewProfileDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\HospitalBenchmark.aspx.cs">
+      <DependentUpon>HospitalBenchmark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\HospitalBenchmark.aspx.designer.cs">
+      <DependentUpon>HospitalBenchmark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ReportHospitalBenchmark.aspx.cs">
+      <DependentUpon>ReportHospitalBenchmark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ReportHospitalBenchmark.aspx.designer.cs">
+      <DependentUpon>ReportHospitalBenchmark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\TimeRN.aspx.cs">
+      <DependentUpon>TimeRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\TimeRN.aspx.designer.cs">
+      <DependentUpon>TimeRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ReportTimeRN.aspx.cs">
+      <DependentUpon>ReportTimeRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ReportTimeRN.aspx.designer.cs">
+      <DependentUpon>ReportTimeRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ReportTimeRNCharts.aspx.cs">
+      <DependentUpon>ReportTimeRNCharts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ReportTimeRNCharts.aspx.designer.cs">
+      <DependentUpon>ReportTimeRNCharts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ReportTimeRNChartsPie.aspx.cs">
+      <DependentUpon>ReportTimeRNChartsPie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\BenchmarkingFilters.aspx.cs">
+      <DependentUpon>BenchmarkingFilters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\BenchmarkingFilters.aspx.designer.cs">
+      <DependentUpon>BenchmarkingFilters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ReportHospitalBenchmarkGrid.aspx.cs">
+      <DependentUpon>ReportHospitalBenchmarkGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ReportHospitalBenchmarkGrid.aspx.designer.cs">
+      <DependentUpon>ReportHospitalBenchmarkGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ControlChart.aspx.cs">
+      <DependentUpon>ControlChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ControlChart.aspx.designer.cs">
+      <DependentUpon>ControlChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DeleteHospital.aspx.cs">
+      <DependentUpon>DeleteHospital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\DeleteHospital.aspx.designer.cs">
+      <DependentUpon>DeleteHospital.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jquery\jquery.treeview.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="jquery\jquery-latest.js" />
+    <Content Include="jquery\jquery.alphanumeric.pack.js" />
+    <Content Include="jquery\jquery.corner.js" />
+    <Content Include="jquery\jquery.maskedinput-1.2.2.js" />
+    <Content Include="UserControls\CopyProfileFromTemplate.ascx" />
+    <Content Include="Common\CopyProfileFromTemplate.aspx" />
+    <Content Include="UserControls\ReportHospitalBenchmark.ascx" />
+    <Content Include="UserControls\UnitAssessmentReport.ascx" />
+    <Content Include="UserControls\UserAssessmentReport.ascx" />
+    <Content Include="UserControls\Validation.ascx" />
+    <Content Include="UserControls\ReportTimeRNChartsPie.ascx" />
+    <Content Include="UserControls\WebUserControl3.ascx" />
+    <Content Include="Users\UploadSpreadSheet.aspx" />
+    <Content Include="Users\UserHomePage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\AdminHomePage.aspx" />
+    <Content Include="Administrator\HospitalList.aspx" />
+    <Content Include="Administrator\UserList.aspx" />
+    <Content Include="Images\Edit_16.png" />
+    <Content Include="Images\header-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\style.css" />
+    <Content Include="Images\arrow.gif" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\footer_l_bg.png" />
+    <Content Include="Images\footer_m_bg.png" />
+    <Content Include="Images\footer_r_bg.png" />
+    <Content Include="Images\left_shadow.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\right_shadow.png" />
+    <Content Include="Images\tabarea_bg.jpg" />
+    <Content Include="Images\tab_left.jpg" />
+    <Content Include="Images\tab_off.gif" />
+    <Content Include="Images\tab_on.gif" />
+    <Content Include="Images\tab_right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\EditHospitalInfomation.aspx" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="CSS\ControlStyles.css" />
+    <Content Include="Images\button.jpg" />
+    <Content Include="Images\buttonHover.jpg" />
+    <Content Include="Images\Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\AddUpdateConfig.aspx" />
+    <Content Include="Administrator\Admin.Master" />
+    <Content Include="Administrator\AdminMaster.Master" />
+    <Content Include="Administrator\DataManagementFileList.aspx" />
+    <Content Include="Administrator\DataManagementMonth.aspx" />
+    <Content Include="Administrator\DataManagementUnit.aspx" />
+    <Content Include="Administrator\DataManagementYear.aspx" />
+    <Content Include="Administrator\FiltersList.aspx" />
+    <Content Include="Administrator\ManageMonth.aspx" />
+    <Content Include="Administrator\ManageYears.aspx" />
+    <Content Include="Administrator\PopupMasterPage.Master" />
+    <Content Include="Administrator\MasterPageValidData.Master" />
+    <Content Include="Administrator\ReportPopupMasterPage.Master" />
+    <None Include="components\ApplicationClass.as" />
+    <None Include="components\FileUpload.as" />
+    <None Include="components\FileUploadEvent.as" />
+    <None Include="components\FileUploadProgressChangedEvent.as" />
+    <Content Include="Administrator\SendMessage.aspx" />
+    <Content Include="Administrator\ShowSpecialTypeData.aspx" />
+    <Content Include="Images\message-04.gif" />
+    <Content Include="RMC.Web.Publish.xml" />
+    <Content Include="UserControls\SendMessage.ascx" />
+    <Content Include="UserControls\ShowSpecialTypeData.ascx" />
+    <Content Include="Users\LocationProfile.aspx" />
+    <Content Include="Users\ReportLocationProfileGrid.aspx" />
+    <Content Include="Users\ReportPopupMasterPage.Master" />
+    <Content Include="Administrator\LocationProfile.aspx" />
+    <Content Include="Administrator\RequestApprovalForHospital.aspx" />
+    <Content Include="Administrator\StandardFormat.aspx" />
+    <Content Include="Administrator\StandardizeLocationName.aspx" />
+    <Content Include="Administrator\ReportHospitalBenchmarkGrid.aspx" />
+    <Content Include="Administrator\ReportTimeRNGrid.aspx" />
+    <Content Include="Administrator\ReportLocationProfileGrid.aspx" />
+    <Content Include="JavaScript\Common.js" />
+    <Content Include="JavaScript\fixit.js" />
+    <Content Include="JavaScript\IE7.js" />
+    <Content Include="JavaScript\MenuDropdown.js" />
+    <Content Include="JavaScript\swfobject.js" />
+    <Content Include="UserControls\AddOrUpdateConfiguration.ascx" />
+    <Content Include="UserControls\LocationProfile.ascx" />
+    <Content Include="UserControls\ReportHospitalBenchmarkGrid.ascx" />
+    <Content Include="UserControls\ReportLocationProfileGrid.ascx" />
+    <Content Include="UserControls\ReportTimeRNGrid.ascx" />
+    <Content Include="UserControls\RequestApprovalForHospital.ascx" />
+    <Content Include="UserControls\StandardizeLocationName.ascx" />
+    <Content Include="Users\MasterPageValidData.Master" />
+    <Content Include="Administrator\SaveImageAtClientSide.aspx" />
+    <Content Include="Administrator\ViewBenchmarkingFilters.aspx" />
+    <Content Include="Administrator\ControlCharts.aspx" />
+    <Content Include="CSS\MenuDropDown.css" />
+    <Content Include="Images\bg-contentpopupmaster.gif" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="UserControls\ControlCharts.ascx" />
+    <Content Include="UserControls\DataManagementHospitalUnit.ascx" />
+    <Content Include="UserControls\DataManagementMonth.ascx" />
+    <Content Include="UserControls\DataManamentYear.ascx" />
+    <Content Include="UserControls\FiltersList.ascx" />
+    <Content Include="UserControls\ManageMonth.ascx" />
+    <Content Include="UserControls\ManageYears.ascx" />
+    <Content Include="UserControls\SaveChartImage.ascx" />
+    <Content Include="UserControls\ViewBenchmarkingFilters.ascx" />
+    <Content Include="Users\DataManagementFileList.aspx" />
+    <Content Include="Users\DataManagementMonth.aspx" />
+    <Content Include="Users\DataManagementUnit.aspx" />
+    <Content Include="Users\DataManagementYear.aspx" />
+    <Content Include="Users\ManageMonth.aspx" />
+    <Content Include="Users\ManageYears.aspx" />
+    <Content Include="Users\PopupMasterPage.Master" />
+    <Content Include="Administrator\ImageView.swf" />
+    <Content Include="Administrator\ListView.swf" />
+    <Content Include="Administrator\ReportTimeRNChartsPie.aspx" />
+    <Content Include="Administrator\ShortView.swf" />
+    <Content Include="Administrator\ShowValidData.aspx" />
+    <Content Include="Administrator\TimeRN.aspx" />
+    <Content Include="Administrator\ReportTimeRNCharts.aspx" />
+    <Content Include="Administrator\NationalDatabase.aspx" />
+    <Content Include="Administrator\BenchmarkingFilters.aspx" />
+    <Content Include="Images\FileListHeader.gif" />
+    <Content Include="Images\FileListTypeHeader.gif" />
+    <Content Include="Images\iconEdit_e.gif" />
+    <Content Include="Images\media_beginning.png" />
+    <Content Include="Images\media_beginning1.png" />
+    <Content Include="Images\stepBackward.png" />
+    <Content Include="Images\stepForward.png" />
+    <Content Include="UserControls\BenchmarkingFilters.ascx" />
+    <Content Include="UserControls\DataManagementFileList.ascx" />
+    <Content Include="UserControls\NationalDatabase.ascx" />
+    <Content Include="UserControls\ReportTimeRNCharts.ascx" />
+    <Content Include="UserControls\TimeRN.ascx" />
+    <Content Include="Users\ImageView.swf" />
+    <Content Include="Users\ListView.swf" />
+    <Content Include="Users\ReportTimeRNGrid.aspx" />
+    <Content Include="Users\RequestApprovalForHospital.aspx" />
+    <Content Include="Users\SaveImageAtClientSide.aspx" />
+    <Content Include="Users\SendMessage.aspx" />
+    <Content Include="Users\ShortView.swf" />
+    <Content Include="Users\ShowValidData.aspx" />
+    <Content Include="Users\StandardFormat.aspx" />
+    <Content Include="Users\UserGridView.Master" />
+    <Content Include="Users\UserMasterPage.Master" />
+    <Content Include="Administrator\AjaxClassicCallBack.aspx" />
+    <Content Include="Administrator\ProfileType.aspx" />
+    <Content Include="Administrator\DeleteHospital.aspx" />
+    <Content Include="Administrator\HospitalBenchmark.aspx" />
+    <Content Include="UserControls\DataManagement.ascx" />
+    <Content Include="UserControls\DeleteHospital.ascx" />
+    <Content Include="UserControls\ProfileType.ascx" />
+    <Content Include="UserControls\HospitalBenchmark.ascx" />
+    <Content Include="UserControls\ViewNonValidForNurse.ascx" />
+    <Content Include="Users\AjaxClassicCallBack.aspx" />
+    <Content Include="Administrator\ActivateUser.aspx" />
+    <Content Include="Administrator\AdminUnitType.aspx" />
+    <Content Include="Administrator\CategoryProfiles.aspx" />
+    <Content Include="Administrator\CreateNewProfile.aspx" />
+    <Content Include="Administrator\DataManagement.aspx" />
+    <Content Include="Administrator\DeleteAll.aspx" />
+    <Content Include="Administrator\DeleteCategoryProfile.aspx" />
+    <Content Include="Administrator\DeleteNursePDAInfo.aspx" />
+    <Content Include="Administrator\EAFUpload.swf" />
+    <Content Include="Administrator\ExportExcelFile.aspx" />
+    <Content Include="Administrator\FileUploader.aspx" />
+    <Content Include="Administrator\GetUserList.aspx" />
+    <Content Include="Administrator\HospitalDemographicDetail.aspx" />
+    <Content Include="Administrator\HospitalDetail.aspx" />
+    <Content Include="Administrator\HospitalRegistration.aspx" />
+    <Content Include="Administrator\HospitalType.aspx" />
+    <Content Include="Administrator\HospitalUnitInfomation.aspx" />
+    <Content Include="Administrator\ImportExcelSheet.aspx" />
+    <Content Include="Administrator\ManageHospitals.aspx" />
+    <Content Include="Administrator\ManageHospitalUnits.aspx" />
+    <Content Include="Administrator\MonthDetail.aspx" />
+    <Content Include="Administrator\MonthlyErrorReport.aspx" />
+    <Content Include="Administrator\NonValidateData.aspx" />
+    <Content Include="Administrator\NonValidData.aspx" />
+    <Content Include="Administrator\OwnershipType.aspx" />
+    <Content Include="Administrator\PharmacyType.aspx" />
+    <Content Include="Administrator\RequestApproval.aspx" />
+    <Content Include="Administrator\SendNotification.aspx" />
+    <Content Include="Administrator\SendUserNotification.aspx" />
+    <Content Include="Administrator\TableView.swf" />
+    <Content Include="Administrator\Type.aspx" />
+    <Content Include="Administrator\UserProfile.aspx" />
+    <Content Include="Administrator\UserRegistration.aspx" />
+    <Content Include="Administrator\ValidationTable.aspx" />
+    <Content Include="Administrator\ViewProfileDetail.aspx" />
+    <Content Include="Administrator\ViewUsersByUnits.aspx" />
+    <Content Include="Administrator\ViewUsersByHospitals.aspx" />
+    <Content Include="CSS\screen.css" />
+    <Content Include="CSS\template.css" />
+    <Content Include="CSS\treeview.css" />
+    <Content Include="CSS\ui.accordion.css" />
+    <Content Include="dv.aspx" />
+    <Content Include="EaFlashFiles\EAFUpload.swf" />
+    <Content Include="EaFlashFiles\swfobject.js" />
+    <Content Include="EaFlashFiles\TableView.swf" />
+    <Content Include="ForgetPassword.aspx" />
+    <Content Include="Images\back.gif" />
+    <Content Include="Images\bg-content.jpg" />
+    <Content Include="Images\bg_gradient.jpg" />
+    <Content Include="Images\bg_gradient_side.jpg" />
+    <Content Include="Images\bot-left.jpg" />
+    <Content Include="Images\bottom-bg.jpg" />
+    <Content Include="Images\bottom-right.jpg" />
+    <Content Include="Images\buttonDisable.jpg" />
+    <Content Include="Images\button_productpage.jpg" />
+    <Content Include="Images\button_videooverview.jpg" />
+    <Content Include="Images\Close.png" />
+    <Content Include="Images\logoMain.png" />
+    <Content Include="Images\minus.gif" />
+    <Content Include="Images\plus.gif" />
+    <Content Include="Images\tab_offMain.gif" />
+    <Content Include="Images\tab_off_1.gif" />
+    <Content Include="Images\tab_onMain.gif" />
+    <Content Include="Images\tab_on_1.gif" />
+    <Content Include="Images\top-bg.jpg" />
+    <Content Include="Images\top-left.jpg" />
+    <Content Include="Images\top-right.jpg" />
+    <Content Include="Images\treeview-black-line.gif" />
+    <Content Include="Images\treeview-black.gif" />
+    <Content Include="Images\treeview-default-line.gif" />
+    <Content Include="Images\treeview-default.gif" />
+    <Content Include="Images\treeview-famfamfam-line.gif" />
+    <Content Include="Images\treeview-famfamfam.gif" />
+    <Content Include="Images\treeview-gray-line.gif" />
+    <Content Include="Images\treeview-gray.gif" />
+    <Content Include="Images\treeview-red-line.gif" />
+    <Content Include="Images\treeview-red.gif" />
+    <Content Include="Images\View.gif" />
+    <Content Include="jquery\ui.accordion.js" />
+    <Content Include="jquery\ui.core.js" />
+    <Content Include="UserControls\ActivateUser.ascx" />
+    <Content Include="UserControls\ActivationOfUsers.ascx" />
+    <Content Include="UserControls\ChangePassword.ascx" />
+    <Content Include="UserControls\ContactUs.ascx" />
+    <Content Include="UserControls\ContactUsNotification.ascx" />
+    <Content Include="UserControls\CreateNewProfile.ascx" />
+    <Content Include="UserControls\DataValidation.ascx" />
+    <Content Include="UserControls\DeleteAll.ascx" />
+    <Content Include="UserControls\DeleteCategoryProfile.ascx" />
+    <Content Include="UserControls\DeleteNursePDAInfo.ascx" />
+    <Content Include="UserControls\DeleteProfile.ascx" />
+    <Content Include="UserControls\FileUploader.ascx" />
+    <Content Include="UserControls\GetUsers.ascx" />
+    <Content Include="UserControls\HospitalDemographicInfo.ascx" />
+    <Content Include="UserControls\HospitalEditRegistration.ascx" />
+    <Content Include="UserControls\HospitalInfo.ascx" />
+    <Content Include="UserControls\HospitalRegistration.ascx" />
+    <Content Include="UserControls\HospitalType.ascx" />
+    <Content Include="UserControls\HospitalUnitInformation.ascx" />
+    <Content Include="UserControls\ImportExcelSheet.ascx" />
+    <Content Include="UserControls\NewsLetter.ascx" />
+    <Content Include="UserControls\NonValidatedData.ascx" />
+    <Content Include="UserControls\OwnerShipType.ascx" />
+    <Content Include="UserControls\PharmacyType.ascx" />
+    <Content Include="UserControls\ProfileDetail.ascx" />
+    <Content Include="UserControls\ProfileTreeView.ascx" />
+    <Content Include="UserControls\RequestApproval.ascx" />
+    <Content Include="UserControls\RequestApprovalNotification.ascx" />
+    <Content Include="UserControls\RequestForTypes.ascx" />
+    <Content Include="UserControls\RequestList.ascx" />
+    <Content Include="UserControls\SendNotificationForUsers.ascx" />
+    <Content Include="UserControls\ShowValidData.ascx" />
+    <Content Include="UserControls\ucAdminTreeView.ascx" />
+    <Content Include="UserControls\ucDemographicMembersTreeView.ascx" />
+    <Content Include="UserControls\ucMembersTreeView.ascx" />
+    <Content Include="UserControls\UnitType.ascx" />
+    <Content Include="UserControls\UserNotification.ascx" />
+    <Content Include="UserControls\UserProfile.ascx" />
+    <Content Include="UserControls\UserRegistration.ascx" />
+    <Content Include="UserControls\ValidationData.ascx" />
+    <Content Include="UserControls\ViewNonValid.ascx" />
+    <Content Include="Users\CategoryProfiles.aspx" />
+    <Content Include="Users\ChangePassword.aspx" />
+    <Content Include="Users\ContactUs.aspx" />
+    <Content Include="Users\CreateNewProfile.aspx" />
+    <Content Include="Users\DataManagement.aspx" />
+    <Content Include="Users\DataValidation.aspx" />
+    <Content Include="Users\DeleteAll.aspx" />
+    <Content Include="Users\DeletecategoryProfile.aspx" />
+    <Content Include="Users\DeleteNursePDAInfo.aspx" />
+    <Content Include="Users\DemographicDetail.aspx" />
+    <Content Include="Users\EAFUpload.swf" />
+    <Content Include="Users\EditOrViewDemographicDetail.aspx" />
+    <Content Include="Users\EditOrViewHospitalRegistration.aspx" />
+    <Content Include="Users\EditUserHospitalRegis.aspx" />
+    <Content Include="Users\ErrorMessage.aspx" />
+    <Content Include="Users\FileUploader.aspx" />
+    <Content Include="Users\HospitalDemographicDetail.aspx" />
+    <Content Include="Users\HospitalDetail.aspx" />
+    <Content Include="Users\HospitalRegistration.aspx" />
+    <Content Include="Users\HospitalTypes.aspx" />
+    <Content Include="Users\HospitalUnitInformation.aspx" />
+    <Content Include="Users\HTMLPage1.htm" />
+    <Content Include="Users\InActiveUser.aspx" />
+    <Content Include="Users\NonValidData.aspx" />
+    <Content Include="Users\Notification.aspx" />
+    <Content Include="Users\OwnershipType.aspx" />
+    <Content Include="Users\PharmacyType.aspx" />
+    <Content Include="Users\RequestApproval.aspx" />
+    <Content Include="Users\RequestForTypes.aspx" />
+    <Content Include="Users\SendRequest.aspx" />
+    <Content Include="Users\SendUserNotification.aspx" />
+    <Content Include="Users\TableView.swf" />
+    <Content Include="Users\UnitType.aspx" />
+    <Content Include="Users\UserProfile.aspx" />
+    <Content Include="Users\UserRegistration.aspx" />
+    <Content Include="Users\ValidateData.aspx" />
+    <Content Include="Users\ViewProfileDetail.aspx" />
+    <Content Include="Users\Web.config" />
+    <Content Include="Administrator\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="UserRegistration.aspx" />
+    <Content Include="Users\HospitalBenchmark.aspx" />
+    <Content Include="Users\ReportHospitalBenchmark.aspx" />
+    <Content Include="Users\TimeRN.aspx" />
+    <Content Include="Users\ReportTimeRN.aspx" />
+    <Content Include="Users\ReportTimeRNCharts.aspx" />
+    <Content Include="Users\ReportTimeRNChartsPie.aspx" />
+    <Content Include="Users\BenchmarkingFilters.aspx" />
+    <Content Include="Users\ReportHospitalBenchmarkGrid.aspx" />
+    <Content Include="Users\ControlChart.aspx" />
+    <Content Include="Users\DeleteHospital.aspx" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Common\Excel\myExcelFile.xls" />
+    <None Include="Excel\myExcelFile.xls" />
+    <None Include="Excel\OutFilename.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EncrptDecrpt\EncrptDecrpt.csproj">
+      <Project>{85A17C87-97A1-432F-BE81-9AD9DF35C1C6}</Project>
+      <Name>EncrptDecrpt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryStringHandler\QueryStringHandler.csproj">
+      <Project>{DD0520D9-BE87-436A-AD5B-4E1B92DC1FDA}</Project>
+      <Name>QueryStringHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMC.BusinessEntities\RMC.BusinessEntities.csproj">
+      <Project>{4511CC43-4582-46E7-80FE-9A91DA03F37E}</Project>
+      <Name>RMC.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMC.BussinessService\RMC.BussinessService.csproj">
+      <Project>{459CCB2C-AE51-4C05-9180-49872470DCE9}</Project>
+      <Name>RMC.BussinessService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMC.DataService\RMC.DataService.csproj">
+      <Project>{B3910E23-1E19-46A3-8D54-C1A83C72CD5D}</Project>
+      <Name>RMC.DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMC.LogExceptions\RMC.LogExceptions.csproj">
+      <Project>{E629C66C-233D-455F-96B3-6DDDAEA99A5B}</Project>
+      <Name>RMC.LogExceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62263</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+</Project>

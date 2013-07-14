@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ReportPopupMasterPage.master.cs" Inherits="RMC.Web.Users.ReportPopupMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Rapid, Modeling" />
+    <meta name="description" content="Rapid Modeling" />
+    <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+    <title>:::Rapid Modeling:::</title>
+
+    <script type="text/javascript" src="../jquery/jquery-latest.js"></script>
+
+    <script type="text/javascript" src="../jquery/jquery.treeview.js"></script>
+
+    <script type="text/javascript" language="javascript" src="../jquery/jquery.maskedinput-1.2.2.js"></script>
+
+    <script type="text/javascript" language="javascript" src="../jquery/jquery.alphanumeric.pack.js"></script>
+
+    <script type="text/javascript" language="javascript" src="../jquery/jquery.corner.js"></script>
+
+    <script type="text/javascript" language="javascript" src="../JavaScript/Common.js"></script>
+
+    <link href="../CSS/treeview.css" rel="stylesheet" type="text/css" />
+    <%--<script type="text/javascript">
+        $(document).ready(function() {
+
+//            $("#UserTreeView").treeview({
+
+//                collapsed: true,
+//                unique: true,
+//                persist: "location"
+//            });
+//            $("#divTreeView").corner("round 12px").parent().css('padding', '2px').corner("round 12px");
+            $("#divInner").corner("round 12px").parent().css('padding', '2px').corner("round 12px");
+        });
+    </script>--%>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $('a#slick-toggle').click(function() {
+
+                $('#divToggle').toggle(400);
+                return false;
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $('a#slick-toggleRM').click(function() {
+
+                $('#divToggleRM').toggle(400);
+                return false;
+            });
+        });
+
+    </script>
+
+    <link rel="stylesheet" href="../CSS/template.css" type="text/css" />
+    <link href="../CSS/ControlStyles.css" rel="stylesheet" type="text/css" />
+    <%--<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css" />--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <%--<div style="margin: 0px auto; width: 1000px;">--%>
+        <div style="width: 1000px;">
+            <div style="height: 10px; width: 1000px;">
+            </div>
+            <!--end of head content-->
+            <div id="bottom-content" style="width: 1000px;">
+                <div id="content" style="width: 1000px;">
+                    <div class="content-inner" style="width: 1000px;">
+                        <div class="top" style="width: 1000px;">
+                            
+                        </div>
+                        <div class="wrapers">
+                            <div id="wrapper" style="width: 970px;">
+                                <div style="float: left; width: 970px;">
+                                    <%--<div id="divInner" 
+                                        style="float: left; width: 100%; vertical-align: top; text-align: left; padding-top: 15px;">
+                                        <div style="float: left; width: 100%; overflow: hidden; position: relative;
+                                            z-index: 0;">--%>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        <p>
+                                        </p>
+                                    </asp:ContentPlaceHolder>
+                                    <%--</div>
+                                    </div>--%>
+                                    <div style="height: 150px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of wrap-arin-->
+                        <%--<div class="bottom">
+                           
+                        </div>--%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
