@@ -40,6 +40,15 @@ namespace RMC.Web.Administrator {
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonHomePage;
         
         /// <summary>
+        /// LinkButtonEmailSending control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonEmailSending;
+        
+        /// <summary>
         /// LinkButtonUserProfiles control.
         /// </summary>
         /// <remarks>

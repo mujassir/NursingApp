@@ -254,6 +254,12 @@
                                                         Font-Underline="False" ForeColor="#06569D" PostBackUrl="~/Administrator/AdminHomePage.aspx">Home</asp:LinkButton>
                                                 </td>
                                             </tr>
+                                             <tr>
+                                                <td align="left">
+                                                    <asp:LinkButton ID="LinkButtonEmailSending" runat="server" Font-Bold="True" Font-Size="11px"
+                                                        Font-Underline="False" ForeColor="#06569D" PostBackUrl="~/Administrator/SendEmail.aspx">Send Email</asp:LinkButton>
+                                                </td>
+                                            </tr>
                                             <tr>
                                                 <td align="left">
                                                     <asp:LinkButton ID="LinkButtonUserProfiles" runat="server" Font-Bold="True" Font-Size="11px"

@@ -128,6 +128,7 @@
     <Content Include="Administrator\testpage.aspx" />
     <Content Include="Administrator\ValidationData.aspx" />
     <Content Include="Administrator\Utility.aspx" />
+    <Content Include="Administrator\SendEmail.aspx" />
     <Content Include="bin\Interop.Excel.dll" />
     <Content Include="bin\Interop.VBIDE.dll" />
     <Content Include="bin\Microsoft.Vbe.Interop.dll" />
@@ -642,6 +643,13 @@
     </Compile>
     <Compile Include="Administrator\Utility.aspx.designer.cs">
       <DependentUpon>Utility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SendEmail.aspx.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SendEmail.aspx.designer.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChartControl.cs" />
     <Compile Include="Common\UserAssessment.aspx.cs">
